@@ -91,7 +91,15 @@ const router = createRouter({
         }
       ]
     },
-  ]
+  ],
+  // ページ遷移でスクロール位置を TOP に戻す
+  scrollBehavior(_to, _from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  },
 })
 
 export default router
