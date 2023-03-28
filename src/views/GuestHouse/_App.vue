@@ -31,10 +31,10 @@ const footerMenuList = ref([
   {
     title: "ゲストハウスについて",
     itemList: [
-      {
-        name: "施設",
-        link: "/guest_house/facilities",
-      },
+      // {
+      //   name: "施設",
+      //   link: "/guest_house/facilities",
+      // },
       {
         name: "アクセス",
         link: "/guest_house/access",
@@ -111,6 +111,6 @@ const snsList = ref([
 
 
 @media (min-width: 1024px) {
-  
+
 }
 </style>
