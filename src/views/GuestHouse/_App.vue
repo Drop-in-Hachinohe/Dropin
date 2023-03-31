@@ -31,6 +31,7 @@ const footerMenuList = ref([
   {
     title: "ゲストハウスについて",
     itemList: [
+      // 再deployのため変更を追加
       // {
       //   name: "施設",
       //   link: "/guest_house/facilities",
