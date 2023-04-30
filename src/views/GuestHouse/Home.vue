@@ -129,16 +129,14 @@ Api.fetchNewsIndex('guest_house_top').then((data) => {
         </li>
       </ul>
     </section>
-    <section class="section mt-20">
+    <section class="section mt-20 bg-slate-100">
       <h2 class="text-slate-700 text-4xl text-center">DEVELOPMENT SPACE</h2>
       <p class="text-base text-slate-700　text-center">開発スペース</p>
       <p class="text-base mt-10">
-        高速ひかりWifiを導入しております。ご自由にご利用ください。疲れた時にはソファで一休み。<br>
-        ランニングマシーンもありますので、体を動かしたい時はスニーカーも一緒にお持ちください
+        高速ひかりWifiを導入しております。ご自由にご利用ください。疲れた時にはソファで一休みできます∩(ΦωΦ)∩<br>
+        ランニングマシーンもありますので、体を動かしたい時はスニーカーも一緒にお持ちくださいね〜！
       </p>
-      <div class="text-sm mt-8">
-        <p>開発スペースは宿泊の方以外の方もご利用されている場合があります。</p>
-      </div>
+      <p class="text-sm mt-6">※開発スペースは宿泊の方以外の方もご利用されている場合がありますm(｡_｡；))m</p>
       <div class="mt-16">
         <Carousel :settings="settings" :breakpoints="breakpoints">
           <Slide v-for="(item, index) in developmentRoomImages" :key="index">
@@ -150,6 +148,12 @@ Api.fetchNewsIndex('guest_house_top').then((data) => {
             <Navigation />
           </template>
         </Carousel>
+        <div class="text-sm mt-8">
+          <p class="font-bold">開発スペースを使って様々なイベントを開催しています。よろしければごらんください!</p>
+          <a href="https://coderdojo-hachinohe.aomori.jp/posts/43109806" target="_blank" class="text-teal-600 underline">
+            海が見えるゲストハウスで美味しいコーヒーを飲みながら作品作り！第20回CoderDojo八戸
+          </a>
+        </div>
       </div>
     </section>
     <section class="section">
