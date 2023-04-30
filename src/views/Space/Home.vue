@@ -139,7 +139,7 @@ Api.fetchNewsIndex('drop_in_top').then((data) => {
         <dl id="calendar">
           <dt class="font-bold text-center mt-10 underline">営業日カレンダー</dt>
           <dd>
-            <iframe class="w-full mt-1" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=0&showTz=0&showCalendars=0&src=ZHJvcGluLmhhY2hpbm9oZUBnbWFpbC5jb20&color=%23039BE5" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe class="w-full mt-1" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=0&showCalendars=0&src=ZHJvcGluLmhhY2hpbm9oZUBnbWFpbC5jb20&src=MjZiYjA4M2E1NGY0YTdlNzc5MjAyMjcxYmJmNmQ3NmRjYjFmMzNhODcwMjVlNjRkODk0OGNjMTkyMDA5ZTE3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%233F51B5" height="600" frameborder="0" scrolling="no"></iframe>
           </dd>
         </dl>
       </div>
