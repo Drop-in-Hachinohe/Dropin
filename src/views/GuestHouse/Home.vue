@@ -39,20 +39,11 @@ const features = [
 const facilities = [
   { 
     imageUrl: '/images/GH/facility_01.jpg',
-    title: "こだわりベッド",
+    title: "1日1組のみのお部屋",
     class: "facility_content_01",
-    content: `宿泊用のお部屋は1つだけ（最大４名様）。
-      疲れをゆっくり癒せるトゥルースリーパーのベッドを用意しています。
-      ※トゥルースリーパーは１台のみとなります。
+    content: `1階と2階に一つずつ宿泊ルームがあります男女混合のエンジニアチームでもお部屋を分けて合宿できます。（最大４名様）。
+      1階のお部屋にはトゥルースリーパーのマットレスを１台用意しております。
       `
-  },
-  { 
-    imageUrl: '/images/GH/facility_02.jpg',
-    title: "開発環境",
-    class: "facility_content_02",
-    content: `高速ひかりWifiを導入しております。ご自由にご利用ください。
-    疲れた時にはYogiboで一休み。
-    `
   },
 ]
 const baths = [
@@ -64,6 +55,23 @@ const baths = [
   },
   { 
     imageUrl: '/images/GH/wc.jpg',
+  }
+]
+const developmentRoomImages = [
+  { 
+    imageUrl: '/images/GH/developmentRoom_01.jpg',
+  },
+  { 
+    imageUrl: '/images/GH/developmentRoom_02.jpg',
+  },
+  { 
+    imageUrl: '/images/GH/developmentRoom_03.jpg',
+  },
+  { 
+    imageUrl: '/images/GH/developmentRoom_04.jpg',
+  },
+  { 
+    imageUrl: '/images/GH/developmentRoom_05.jpg',
   }
 ]
 const news = ref([]);
@@ -105,22 +113,13 @@ Api.fetchNewsIndex('guest_house_top').then((data) => {
           </template>
         </Carousel>
       </ul>
-      <!-- <ul class="md:flex mt-20">
-        <li v-for="(feature, index) in features" :key="index" 
-          class="px-12 mt-12 sm:px-20 md:mt-0 md:flex-1 md:px-1">
-          <p class="text-center font-bold text-teal-600 text-base">
-            {{ feature.title }}
-          </p>
-          <img :src="feature.imageUrl" class="rounded-full aspect-square mt-5 md:p-2" />
-        </li>
-      </ul> -->
     </section>
     <section id="facilities">
       <h2 class="text-slate-700 text-4xl text-center">ROOM</h2>
       <p class="text-base text-slate-700　text-center">宿泊ルーム</p>
       <ul class="sm:mt-16">
         <li v-for="(facility, index) in facilities" :key="index" class="facility mt-10">
-          <div class="facility_content sm:w-6/12 md:w-5/12 lg:w-4/12 py-12 px-10" :class="facility.class">
+          <div class="facility_content sm:w-6/12 md:w-5/12 lg:w-4/12 py-6 px-5" :class="facility.class">
             <h3 class="font-bold text-lg facility_title">{{ facility.title }}</h3>
             <p class="text-sm mt-4 whitespace-pre-line">
               {{ facility.content }}
@@ -131,6 +130,29 @@ Api.fetchNewsIndex('guest_house_top').then((data) => {
       </ul>
     </section>
     <section class="section mt-20">
+      <h2 class="text-slate-700 text-4xl text-center">DEVELOPMENT SPACE</h2>
+      <p class="text-base text-slate-700　text-center">開発スペース</p>
+      <p class="text-base mt-10">
+        高速ひかりWifiを導入しております。ご自由にご利用ください。疲れた時にはソファで一休み。<br>
+        ランニングマシーンもありますので、体を動かしたい時はスニーカーも一緒にお持ちください
+      </p>
+      <div class="text-sm mt-8">
+        <p>開発スペースは宿泊の方以外の方もご利用されている場合があります。</p>
+      </div>
+      <div class="mt-16">
+        <Carousel :settings="settings" :breakpoints="breakpoints">
+          <Slide v-for="(item, index) in developmentRoomImages" :key="index">
+            <div class="carousel__item">
+              <img :src="item.imageUrl" class="aspect-square" />
+            </div>
+          </Slide>
+          <template #addons>
+            <Navigation />
+          </template>
+        </Carousel>
+      </div>
+    </section>
+    <section class="section">
       <h2 class="text-slate-700 text-4xl text-center">Bath & Amenities</h2>
       <p class="text-base text-slate-700　text-center">バス&アメニティ</p>
       <p class="text-base mt-10">
