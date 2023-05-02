@@ -6,7 +6,7 @@ import { ref } from 'vue'
   <section class="section mt-16">
     <h2 class="text-slate-700 text-4xl text-center">RESERVE</h2>
     <p class="text-base text-slate-700　text-center">ご予約</p>
-    <h3 class="text-center text-lg font-bold text-red-600 mt-8">管理人の手が全く回っていないため、個別の宿泊予約お問い合わせのみ行っておりますm(_ _)m</h3>
+    <h3 class="text-center text-lg font-bold text-red-600 mt-8">管理人の手が全く回っていないため、ご予約はお問い合わせでのみ行っておりますm(_ _)m</h3>
     <!-- <p class="text-center text-sm font-bold mt-8">
       
     </p> -->
@@ -41,9 +41,12 @@ import { ref } from 'vue'
     </div>
     <h2 class="mt-24 text-slate-700 text-xl font-bold text-center" id="calendar">宿泊カレンダー</h2>
     <p class="text-sm font-bold mt-8">
-      こちらのカレンダー上で「開発スペース開放」となっている時間帯は開発スペースを無料開放中です!ゲストハウスを一緒に作りつつ、一緒にお仕事しませんか^^
+      現在こちらのカレンダーに「宿泊可能」は表示されません。<br>
+      「不在」以外の日程は個別で相談と言う形になります。お手数をおかけします(*´･人･*)<br><br>
+      また、こちらのカレンダー上で「開発スペース開放」となっている時間帯は二階の開発スペースを無料開放中です!<br>
+      <span>特にご予約不要でご自由にご利用いただけます!ゲストハウスを一緒に作りつつ、一緒にお仕事しませんか^^</span>
     </p>
-    <p class="text-sm mt-2">
+    <p class="text-slate-700　text-sm mt-2">
       詳しくは<a href ="https://dropin8.site/guest_house/news/g-3c7719r" class="underline">こちらの記事</a>をご覧ください♫
     </p>
     <iframe class="w-full mt-6" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=0&showCalendars=0&src=MjZiYjA4M2E1NGY0YTdlNzc5MjAyMjcxYmJmNmQ3NmRjYjFmMzNhODcwMjVlNjRkODk0OGNjMTkyMDA5ZTE3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NGJlNTYxYmYzY2M4OTRjZDI4YzI0MTNkNTQ5ODgzNDA4Yjg2NjIyYWUyNDE3MmNlNTZmMTU2ZDUyNjIyMjlkYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NTM1NmE5Njk3OWZmY2YwMTIxOTk0NzEzNzkwZWFlMTg1M2JhZTQzMjc3MjUwMWI3YmVjYTMyYWM0ZmRmMTE2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&color=%23B39DDB&color=%23c94c74" style="border-width:0" height="600" frameborder="0" scrolling="no"></iframe>
