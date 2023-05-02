@@ -51,10 +51,10 @@ import { ref } from 'vue'
     </p>
     <iframe class="w-full mt-6" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=0&showCalendars=0&src=MjZiYjA4M2E1NGY0YTdlNzc5MjAyMjcxYmJmNmQ3NmRjYjFmMzNhODcwMjVlNjRkODk0OGNjMTkyMDA5ZTE3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NGJlNTYxYmYzY2M4OTRjZDI4YzI0MTNkNTQ5ODgzNDA4Yjg2NjIyYWUyNDE3MmNlNTZmMTU2ZDUyNjIyMjlkYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NTM1NmE5Njk3OWZmY2YwMTIxOTk0NzEzNzkwZWFlMTg1M2JhZTQzMjc3MjUwMWI3YmVjYTMyYWM0ZmRmMTE2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&color=%23B39DDB&color=%23c94c74" style="border-width:0" height="600" frameborder="0" scrolling="no"></iframe>
   </section>
-  <div class="bg-slate-100">
+  <!-- <div class="bg-slate-100">
     <section class="section" id="form">
       <h2 class="text-slate-700 font-bold text-xl text-center">申し込みフォーム</h2>
       <iframe class="w-full" src="https://docs.google.com/forms/d/e/1FAIpQLSfVfmJqvZoKZa13vGnt2Ho6ZuWUvrQnGZVwQE69gbBxdSyZkw/viewform?embedded=true" height="1850" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
     </section>
-  </div>
+  </div> -->
 </template>
