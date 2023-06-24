@@ -42,8 +42,8 @@ import { ref } from "vue";
           >上で「宿泊可能」と表示されている日程が予約可能な日程ですのでご確認ください。
         </li>
         <li class="font-bold mt-2">
-          2.希望の日程が「宿泊可能」となっていたら、下の<a
-            href="#form"
+          2.希望の日程が「宿泊可能」となっていたら、<a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfVfmJqvZoKZa13vGnt2Ho6ZuWUvrQnGZVwQE69gbBxdSyZkw/viewform"
             class="font-bold underline"
             >申し込みフォーム</a
           >に記入の上送信をお願いします。
@@ -87,21 +87,13 @@ import { ref } from "vue";
       frameborder="0"
       scrolling="no"
     ></iframe>
-  </section>
-  <div class="bg-slate-100">
-    <section class="section" id="form">
-      <h2 class="text-slate-700 font-bold text-xl text-center">
-        申し込みフォーム
-      </h2>
-      <iframe
-        class="w-full"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfVfmJqvZoKZa13vGnt2Ho6ZuWUvrQnGZVwQE69gbBxdSyZkw/viewform?embedded=true"
-        height="1850"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        >読み込んでいます…</iframe
+    <div class="flex justify-center mt-10">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfVfmJqvZoKZa13vGnt2Ho6ZuWUvrQnGZVwQE69gbBxdSyZkw/viewform"
+        class="btn w-fit bg-teal-600 text-white px-6 py-3 text-lg"
+        target="_blank"
+        >申し込みフォームはこちら</a
       >
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
