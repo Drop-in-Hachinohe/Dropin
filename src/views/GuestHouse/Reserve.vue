@@ -41,14 +41,14 @@ import { ref } from "vue";
           1.<a href="#calendar" class="font-bold underline">宿泊カレンダー</a
           >上で「宿泊可能」と表示されている日程が予約可能な日程ですのでご確認ください。
         </li>
-        <li class="font-bold mt-2">
+        <li class="font-bold mt-6">
           2.希望の日程が「宿泊可能」となっていたら、<a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfVfmJqvZoKZa13vGnt2Ho6ZuWUvrQnGZVwQE69gbBxdSyZkw/viewform"
             class="font-bold underline"
             >申し込みフォーム</a
           >に記入の上送信をお願いします。
         </li>
-        <li class="font-bold mt-2">
+        <li class="font-bold mt-6">
           3.Drop
           inのメールアドレス（minato.dropin@gmail.com）から返信、またはお電話（070-6511-3600）させていただき、予約確定となります。
         </li>
@@ -66,19 +66,29 @@ import { ref } from "vue";
     >
       宿泊カレンダー
     </h2>
-    <p class="text-sm font-bold mt-8">
-      こちらのカレンダー上で「開発スペース開放」となっている時間帯は2階の開発スペースを無料開放中です!<br />
-      <span
-        >こちらは宿泊されない方でも、ご予約不要でコワーキングスペースとしてご自由にご利用いただけます!ゲストハウスを一緒に作りつつ、一緒にお仕事しませんか^^</span
-      >
+    <p class="font-bold text-center mt-8 text-slate-700">
+      基本的に火〜木曜日の営業となっておりますm(_ _)m
     </p>
-    <p class="text-slate-700 text-sm mt-2">
-      詳しくは<a
-        href="https://dropin8.site/guest_house/news/g-3c7719r"
-        class="underline"
-        >こちらの記事</a
-      >をご覧ください♫
+    <p class="text-center text-sm mt-2 text-slate-700">
+      開発合宿等でそのほかの曜日にもかかってしまう場合などは、お手数ですが
+      <a href="/guest_house/contact" class="underline">お問い合わせフォーム</a
+      >からご相談ください
     </p>
+    <div class="bg-slate-200 p-6 mt-16">
+      <p class="text-sm font-bold">
+        こちらのカレンダー上で「開発スペース開放」となっている時間帯は2階の開発スペースを無料開放中です!<br />
+        <span
+          >こちらは宿泊されない方でも、ご予約不要でコワーキングスペースとしてご自由にご利用いただけます!ゲストハウスを一緒に作りつつ、一緒にお仕事しませんか^^</span
+        >
+      </p>
+      <p class="text-slate-700 text-sm mt-2">
+        詳しくは<a
+          href="https://dropin8.site/guest_house/news/g-3c7719r"
+          class="underline"
+          >こちらの記事</a
+        >をご覧ください♫
+      </p>
+    </div>
     <iframe
       class="w-full mt-6"
       src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=0&showCalendars=0&src=MjZiYjA4M2E1NGY0YTdlNzc5MjAyMjcxYmJmNmQ3NmRjYjFmMzNhODcwMjVlNjRkODk0OGNjMTkyMDA5ZTE3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NGJlNTYxYmYzY2M4OTRjZDI4YzI0MTNkNTQ5ODgzNDA4Yjg2NjIyYWUyNDE3MmNlNTZmMTU2ZDUyNjIyMjlkYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NTM1NmE5Njk3OWZmY2YwMTIxOTk0NzEzNzkwZWFlMTg1M2JhZTQzMjc3MjUwMWI3YmVjYTMyYWM0ZmRmMTE2NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&color=%23B39DDB&color=%23c94c74"

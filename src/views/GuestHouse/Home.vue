@@ -164,18 +164,6 @@ Api.fetchNewsIndex("guest_house_top").then((data) => {
             <Pagination />
           </template>
         </Carousel>
-        <div class="text-sm mt-8">
-          <p class="font-bold">
-            開発スペースを使って様々なイベントを開催しています。よろしければごらんください!
-          </p>
-          <a
-            href="https://coderdojo-hachinohe.aomori.jp/posts/43109806"
-            target="_blank"
-            class="text-teal-600 underline"
-          >
-            海が見えるゲストハウスで美味しいコーヒーを飲みながら作品作り！第20回CoderDojo八戸
-          </a>
-        </div>
       </div>
     </section>
 
@@ -187,7 +175,13 @@ Api.fetchNewsIndex("guest_house_top").then((data) => {
         ランニングマシーンもありますので、体を動かしたい時はスニーカーも一緒にお持ちくださいね〜！
       </p>
       <p class="text-sm mt-6">
-        ※開発スペースは宿泊の方以外の方もご利用されている場合がありますm(｡_｡；))m
+        ※開発スペースは一般の方向けに無料開放しているため、宿泊の方以外の方もご利用されている場合がありますm(｡_｡；))m
+        <br />
+        詳しくは<a
+          href="https://dropin8.site/guest_house/news/0c6ymmuqv"
+          class="underline"
+          >こちら</a
+        >をご覧ください
       </p>
       <div class="mt-16">
         <Carousel :settings="settings" :breakpoints="breakpoints">
@@ -320,7 +314,7 @@ Api.fetchNewsIndex("guest_house_top").then((data) => {
     }
   }
 }
-.feature ::v-deep .carousel__icon {
+.feature :deep .carousel__icon {
   fill: white;
 }
 </style>
