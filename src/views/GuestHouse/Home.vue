@@ -182,6 +182,8 @@ Api.fetchNewsIndex("guest_house_top").then((data) => {
           class="underline"
           >こちら</a
         >をご覧ください
+        <br />
+        開発合宿をされる場合は貸切にできますのでご連絡ください。
       </p>
       <div class="mt-16">
         <Carousel :settings="settings" :breakpoints="breakpoints">
