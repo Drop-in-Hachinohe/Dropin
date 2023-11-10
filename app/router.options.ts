@@ -10,7 +10,7 @@ export default <RouterConfig> {
             const req = ssrContext.event.node.req
             const subdomainConcat = req.headers.host?.split('.').concat() as string[]
             const subdomain = subdomainConcat.slice(0, subdomainConcat.length - 2).join('.')
-            if (subdomain !== 'guest-house' && subdomain !== 'dev.guest-house') {
+            if (subdomain !== 'guest-house' && subdomain !== 'stg.guest-house') {
                 routesDirectory = 'space'
             } else {
                 routesDirectory = 'guest-house'
@@ -22,7 +22,7 @@ export default <RouterConfig> {
         if (process.client && window.location.hostname) {
             const subdomainConcat = window.location.hostname.split('.').concat()
             const subdomain = subdomainConcat.slice(0, subdomainConcat.length - 2).join('.')
-            if (subdomain !== 'guest-house' && subdomain !== 'dev.guest-house') {
+            if (subdomain !== 'guest-house' && subdomain !== 'stg.guest-house') {
                 routesDirectory = 'space'
             } else {
                 routesDirectory = 'guest-house'
