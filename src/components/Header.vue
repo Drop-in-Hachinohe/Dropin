@@ -1,30 +1,30 @@
 <script setup>
-import { RouterLink } from 'vue-router';
-import { ref, computed } from 'vue'
-import HeaderMenu from './HeaderMenu.vue'
+import { RouterLink } from "vue-router";
+import { ref, computed } from "vue";
+import HeaderMenu from "./HeaderMenu.vue";
 
 const openMenu = ref(false);
 const message = computed(() => {
-  return openMenu.value ? "閉じる" : "メニュー"
-})
+  return openMenu.value ? "閉じる" : "メニュー";
+});
 defineProps({
   menuList: {
     type: Array,
-    required: true
+    required: true,
   },
   bgColorClass: {
     type: String,
-    required: true
+    required: true,
   },
   headerLogoImg: {
     type: String,
-    required: true
+    required: true,
   },
   headerLogoLink: {
     type: String,
-    required: true
+    required: true,
   },
-})
+});
 </script>
 
 <template>
@@ -32,18 +32,20 @@ defineProps({
     <router-link :to="headerLogoLink" class="header_logo px-6">
       <img :src="headerLogoImg" />
     </router-link>
-    <HeaderMenu
-      :menuList="menuList"
-      :headerClass="'header_nav'" />
-    
-    <div class="toggle_btn text-sm mr-3" @click="openMenu = !openMenu">{{message}}</div>
-      <transition name="slide">
-        <HeaderMenu v-show="openMenu"
-          :menuList="menuList"
-          :bgColorClass="bgColorClass"
-          :headerClass="'header_nav_sp'"
-          @close="openMenu = false"/>
-      </transition>
+    <HeaderMenu :menuList="menuList" :headerClass="'header_nav'" />
+
+    <div class="toggle_btn text-sm mr-3" @click="openMenu = !openMenu">
+      {{ message }}
+    </div>
+    <transition name="slide">
+      <HeaderMenu
+        v-show="openMenu"
+        :menuList="menuList"
+        :bgColorClass="bgColorClass"
+        :headerClass="'header_nav_sp'"
+        @close="openMenu = false"
+      />
+    </transition>
   </nav>
 </template>
 
@@ -70,7 +72,7 @@ defineProps({
     }
   }
 }
-::v-deep .header_nav {
+:deep .header_nav {
   display: none;
   @media (min-width: 640px) {
     display: flex;
@@ -99,7 +101,7 @@ defineProps({
   background-color: white;
   height: 36px;
 }
-::v-deep .header_nav_sp {
+:deep .header_nav_sp {
   @media (min-width: 640px) {
     display: none;
   }
@@ -112,7 +114,7 @@ defineProps({
     width: 50%;
     border-top: dotted 1px white;
     display: flex;
-      align-items: center;
+    align-items: center;
     &:nth-child(2n) {
       border-left: dotted 1px white;
     }
@@ -122,8 +124,9 @@ defineProps({
     padding: 5px;
   }
 }
-.slide-enter-active, .slide-leave-active {
-  transition: all .3s ease;
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.3s ease;
 }
 .slide-enter-from,
 .slide-leave-to {
