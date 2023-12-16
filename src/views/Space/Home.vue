@@ -39,7 +39,7 @@ const whatWeCanDo = [
 
 const news = ref([]);
 
-Api.fetchNewsIndex('drop_in_top').then((data) => {
+Api.fetchNewsIndex('drop_in_index', true).then((data) => {
   news.value = data.contents;
 });
 </script>
