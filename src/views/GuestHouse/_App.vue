@@ -31,11 +31,6 @@ const footerMenuList = ref([
   {
     title: "ゲストハウスについて",
     itemList: [
-      // 再deployのため変更を追加
-      // {
-      //   name: "施設",
-      //   link: "/guest_house/facilities",
-      // },
       {
         name: "アクセス",
         link: "/guest_house/access",
@@ -47,6 +42,10 @@ const footerMenuList = ref([
       {
         name: "お問合せ",
         link: "/guest_house/contact",
+      },
+      {
+        name: "管理人",
+        link: "/guest_house/owner",
       },
     ]
   },
@@ -67,12 +66,19 @@ const footerMenuList = ref([
     title: "Drop inの他のこと",
     itemList: [
       {
-        name: "@Drop in",
+        name: "不登校はフリーランス",
         link: "/space",
+        target: true
       },
       {
-        name: "管理人",
-        link: "/guest_house/owner",
+        name: "黒かもめアンサンブル",
+        link: "/kurokamome",
+        target: true
+      },
+      {
+        name: "CoderDojo八戸",
+        link: "https://coderdojo-hachinohe.aomori.jp/",
+        target: true
       },
     ]
   }
@@ -80,8 +86,12 @@ const footerMenuList = ref([
 
 const snsList = ref([
   {
-    name: "twitter",
+    name: "x",
     link: "https://twitter.com/MinatoDropin",
+  },
+  {
+    name: "instagram",
+    link: "https://www.instagram.com/same_dropin",
   },
   {
     name: "GitHub",

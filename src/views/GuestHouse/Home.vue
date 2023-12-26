@@ -101,7 +101,7 @@ const guestRoomImages = [
 ];
 const news = ref([]);
 
-Api.fetchNewsIndex("guest_house_index", true).then((data) => {
+Api.fetchNewsIndex("guest_house", true).then((data) => {
   news.value = data.contents;
 });
 </script>

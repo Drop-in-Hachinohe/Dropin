@@ -2,8 +2,18 @@ const apiPoint = 'https://dropinminato.microcms.io/api/v1/';
 
 export default {
   async fetchNewsIndex(category = '', showTop = false) {
-    let baseUrl = `${apiPoint}news/?filters=category[contains]${category}&orders=-publishedAt`;
-    const url = showTop ? `${baseUrl}&filters=showTop[equals]true` : baseUrl;
+    
+    let url = `${apiPoint}news`;
+
+    if(category !== '' && showTop){
+      url = `${url}?filters=category[contains]${category}[and]showTop[equals]true&orders=-publishedAt`
+    } else if (category !== '') {
+      url = `${url}?filters=category[contains]${category}&orders=-publishedAt`;
+    } else if (showTop) {
+      url = `${url}?filters=showTop[equals]true&orders=-publishedAt`;
+    } else {
+      url = `${url}?orders=-publishedAt`
+    }
     const response = await fetch(url, {
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
       mode: 'cors', // no-cors, *cors, same-origin

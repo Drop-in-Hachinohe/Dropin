@@ -47,6 +47,10 @@ const footerMenuList = ref([
         name: "お問合せ",
         link: "/space/contact",
       },
+      {
+        name: "管理人",
+        link: "/space/owner",
+      },
     ]
   },
   {
@@ -68,11 +72,19 @@ const footerMenuList = ref([
       {
         name: "鮫のゲストハウスDrop in",
         link: "/guest_house",
+        target: true
       },
       {
-        name: "管理人",
-        link: "/space/owner",
+        name: "黒かもめアンサンブル",
+        link: "/kurokamome",
+        target: true
       },
+      {
+        name: "CoderDojo八戸",
+        link: "https://coderdojo-hachinohe.aomori.jp/",
+        target: true
+      },
+      
     ]
   }
 ])
@@ -83,7 +95,7 @@ const snsList = ref([
     link: "https://www.instagram.com/dropin8nohe",
   },
   {
-    name: "twitter",
+    name: "x",
     link: "https://twitter.com/Dropin88",
   },
   {

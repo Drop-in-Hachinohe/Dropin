@@ -7,7 +7,7 @@ const openMenu = ref(false);
 const message = computed(() => {
   return openMenu.value ? "閉じる" : "メニュー";
 });
-defineProps({
+const props = defineProps({
   menuList: {
     type: Array,
     required: true,
@@ -15,6 +15,10 @@ defineProps({
   bgColorClass: {
     type: String,
     required: true,
+  },
+  textColorClass: {
+    type: String,
+    default: "text-white"
   },
   headerLogoImg: {
     type: String,
@@ -32,7 +36,10 @@ defineProps({
     <router-link :to="headerLogoLink" class="header_logo px-6">
       <img :src="headerLogoImg" />
     </router-link>
-    <HeaderMenu :menuList="menuList" :headerClass="'header_nav'" />
+    <HeaderMenu 
+      :menuList="menuList" 
+      :headerClass="'header_nav'"
+      :textColorClass="textColorClass" />
 
     <div class="toggle_btn text-sm mr-3" @click="openMenu = !openMenu">
       {{ message }}
@@ -42,6 +49,7 @@ defineProps({
         v-show="openMenu"
         :menuList="menuList"
         :bgColorClass="bgColorClass"
+        :textColorClass="textColorClass"
         :headerClass="'header_nav_sp'"
         @close="openMenu = false"
       />
