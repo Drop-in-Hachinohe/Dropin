@@ -19,6 +19,15 @@ module.exports = {
           900: '#3EB2AC',
           DEFAULT: '#28A9A3',
         },
+        'gh-purple': {
+          DEFAULT: '#5b64a8',
+        },
+        'base-navy': {
+          DEFAULT: '#2f4259',
+        },
+        'kurokamome-yellow': {
+          DEFAULT: '#ebad33',
+        }
       }
     },
   },

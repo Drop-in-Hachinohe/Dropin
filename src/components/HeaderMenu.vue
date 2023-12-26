@@ -8,6 +8,10 @@ defineProps({
     type: String,
     required: false
   },
+  textColorClass: {
+    type: String,
+    default: "text-white"
+  },
   headerClass: {
     type: String,
     required: true
@@ -18,11 +22,12 @@ defineProps({
 <template>
   <nav :class="[bgColorClass, headerClass]">
     <a :href="item.link" v-for="item in menuList"
+      :target="item.target ? '_blank' : '_self'"
       @click.native="$emit('close')"
       class="item pl-3"
     >
         <img :src="item.imageUrl" class="icon"/>
-        <p class="text-white text-sm text-center">{{ item.name }}</p>
+        <p :class="textColorClass" class="text-sm text-center">{{ item.name }}</p>
     </a>
   </nav>
 </template>

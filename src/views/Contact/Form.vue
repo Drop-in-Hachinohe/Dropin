@@ -4,6 +4,9 @@ import Api from '../../api/api.js';
 import { useRouter } from "vue-router";
 import Modal from '@/components/Modal.vue';
 import LINE from '@/components/Line.vue'
+import KurokamomeLINE from '@/components/LineKurokamome.vue'
+import RouteCheck from '@/util/routeCheck.js';
+
 const router = useRouter()
 
 const postData = ref({
@@ -17,8 +20,8 @@ let errorShow = ref(false);
 const isValid = computed(() => {
   return postData.value.email !== '' && postData.value.name !== '' && postData.value.message !== '';
 })
-const isInGuestHouse = router.currentRoute._value.path.startsWith('/guest_house');
-postData.value.type = isInGuestHouse ? 'guest_house' : 'drop_in';
+const currentRoute = RouteCheck.currentRoute(router.currentRoute._value.path)
+postData.value.type = currentRoute
 
 function handleSubmit() {
   if (!isValid.value) return false;
@@ -101,9 +104,13 @@ function handleSubmit() {
         全部入力いただけると押せるようになります！
       </p>
     </form>
-    <div v-if="!isInGuestHouse">
-      <p class="text-center font-bold text-lg mt-16">LINEでもOKです！</p>
+    <div v-if="currentRoute == 'space'">
+      <p class="text-center font-bold text-lg mt-16">Drop inの公式LINEでもOKです！</p>
       <LINE />
+    </div>
+    <div v-if="currentRoute == 'kurokamome'">
+      <p class="text-center font-bold text-lg mt-16">黒かもめの公式LINEでもOKです！</p>
+      <KurokamomeLINE />
     </div>
     <Modal v-if="modalShow" @close="modalShow = false">
       <div class="flex flex-col md:flex-row items-center justify-center" >
