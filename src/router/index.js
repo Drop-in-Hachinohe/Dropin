@@ -148,7 +148,7 @@ const router = createRouter({
           component: ContactForm,
         },
         {
-          path: '/space/news/:id',
+          path: '/kurokamome/news/:id',
           component: () => import('../views/News/_id.vue'),
           props: true,
         }
