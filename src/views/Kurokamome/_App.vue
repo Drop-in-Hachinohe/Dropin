@@ -91,7 +91,7 @@ const snsList = ref([
     :bgColorClass="'bgYellow'"
     :textColorClass="'text-gray-800'"
     :headerLogoImg="'/images/kurokamome/header_logo.jpg'"
-    :headerLogoLink="'/'"
+    :headerLogoLink="'/kurokamome'"
   />
   <RouterView />
   <Footer
@@ -100,7 +100,7 @@ const snsList = ref([
     :bgColorClass="'bgYellow'"
     :textColorClass="'text-gray-800'"
     :headerLogoImg="'/images/kurokamome/header_logo.jpg'"
-    :headerLogoLink="'/'"
+    :headerLogoLink="'/kurokamome'"
     >
   </Footer>
 </template>
