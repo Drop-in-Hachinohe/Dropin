@@ -12,12 +12,18 @@ defineProps({
 function formatDate(date) {
   return moment(date).format("YYYY-MM-DD")
 }
+function eyeCatchImage(item) {
+  return item && item.url ? item.url : '/images/common/NO_IMAGE.jpg';
+}
 </script>
 <template>
-  <router-link v-for="news in newsList" :key="news.id" :to="parentRoute == '' ? `news/${news.id}` : `/${parentRoute}/news/${news.id}`"
-    class="border-b-4 flex py-4">
-    <p class="w-32 shrink-0">{{formatDate(news.publishedAt)}}</p>
-    <p>{{ news.title }}</p>
-  </router-link>
+  <ul class="flex flex-wrap">
+    <router-link v-for="news in newsList" :key="news.id" :to="parentRoute == '' ? `news/${news.id}` : `/${parentRoute}/news/${news.id}`"
+    class="w-1/2 lg:w-1/3 p-2">
+      <img :src="eyeCatchImage(news.ogp)" class="aspect-square object-cover">
+      <p class="pt-2">{{ news.title }}</p>
+      <small class="text-gray-600">{{formatDate(news.publishedAt)}}公開</small>
+    </router-link>
+  </ul>
 </template>
   

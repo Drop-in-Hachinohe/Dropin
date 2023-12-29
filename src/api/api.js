@@ -6,13 +6,13 @@ export default {
     let url = `${apiPoint}news`;
 
     if(category !== '' && showTop){
-      url = `${url}?filters=category[contains]${category}[and]showTop[equals]true&orders=-publishedAt`
+      url = `${url}?filters=category[contains]${category}[and]showTop[equals]true&orders=-publishedA&limit=100`
     } else if (category !== '') {
-      url = `${url}?filters=category[contains]${category}&orders=-publishedAt`;
+      url = `${url}?filters=category[contains]${category}&orders=-publishedAt&limit=100`;
     } else if (showTop) {
-      url = `${url}?filters=showTop[equals]true&orders=-publishedAt`;
+      url = `${url}?filters=showTop[equals]true&orders=-publishedAt&limit=100`;
     } else {
-      url = `${url}?orders=-publishedAt`
+      url = `${url}?orders=-publishedAt&limit=100`
     }
     const response = await fetch(url, {
       method: 'GET', // *GET, POST, PUT, DELETE, etc.
