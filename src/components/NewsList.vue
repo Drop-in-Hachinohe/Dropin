@@ -13,7 +13,7 @@ function formatDate(date) {
   return moment(date).format("YYYY-MM-DD")
 }
 function eyeCatchImage(item) {
-  return item && item.url ? item.url : '/images/common/NO_IMAGE.jpg';
+  return item && item.url ? item.url : '/images/common/no_image.jpg';
 }
 </script>
 <template>
