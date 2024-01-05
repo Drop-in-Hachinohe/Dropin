@@ -12,6 +12,7 @@ import KurokamomeHome from '../views/Kurokamome/Home.vue'
 import NewsIndex from '../views/News/Index.vue'
 import ContactForm from '../views/Contact/Form.vue'
 import Owner from '../views/Owner/Show.vue'
+import Works from '../views/Owner/Works.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +31,11 @@ const router = createRouter({
           path: '/owner',
           name: 'TopOwner',
           component: Owner,
+        },
+        {
+          path: '/works',
+          name: 'TopWorks',
+          component: Works,
         },
         {
           path: '/contact',

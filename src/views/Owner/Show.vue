@@ -36,6 +36,13 @@ const things = [
       プログラミング教室ではなく、子供達が自主的に学ぶためのコミュニティで、2011年にアイルランドで始まり、世界では110カ国・2,000の道場、日本には226以上の道場があります。
     `
   },
+  {
+    name: "グラフィックデザイン",
+    link: "/works",
+    description: `
+      個人事業や趣味でチラシのデザインやWeb制作なんかをやっています。この分野なら学生さんに教えることができそうなので、いつか一緒にやりたいなぁと思ってます
+    `
+  },
 ];
 
 const snsList = [
@@ -64,6 +71,8 @@ const snsList = [
         <p class="font-bold sm:text-lg text-base">石橋優希</p>
         <p class="text-sm sm:text-base">青森県八戸市出身</p>
         <p class="text-sm sm:text-base">現在は八戸と神奈川県藤沢市の二拠点</p>
+        <p class="text-sm sm:text-base">会社員としてWebエンジニア、個人事業でデザインをやっています</p>
+        <a class="text-sm sm:text-base underline" href="/works" target="_blank">過去作品はこちら</a>
         <ul class="flex">
           <li v-for="sns in snsList" class="flex frex-col items-center mt-8">
             <a :href="sns.link" target="_blank">
@@ -111,7 +120,7 @@ const snsList = [
     <h3 class="text-slate-700 text-xl text-center font-bold underline">やっていること</h3>
     <ul class="mt-16">
       <li v-for="(item, index) in things" :key="index" class="mb-10">
-        <a :href="item.link">
+        <a :href="item.link" target="_blank">
           <header class="bg-slate-100 inline-block text-lg font-bold border py-1 px-2 hover:shadow">{{ item.name }}</header>
         </a>
         <div class="mt-3">{{ item.description }}</div>
