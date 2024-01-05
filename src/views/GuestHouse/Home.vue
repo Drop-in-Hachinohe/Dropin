@@ -114,7 +114,7 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
         <h1 class="text-white text-base text-center">つくるひとのためのいえ</h1>
       </div>
     </div>
-    <section class="section mt-10">
+    <!-- <section class="section mt-10">
       <h2 class="text-2xl text-center font-bold text-red-700">
         申し訳ございません　<br>
         Drop inは現在営業休止中です
@@ -126,11 +126,13 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
         管理人の娘がトイレトレーニング奮闘中ですが、管理人の掃除が追いつかず、宿泊や開発スペースご利用の方に
         不快な思いをさせる危険があるため、休業させていただきますm(_ _)m
       </p>
-    </section>
+    </section> -->
     <section class="section mt-10">
       <h2 class="text-2xl text-center font-bold">
         Drop inは、開発合宿・ワーケーション特化型ゲストハウスです
       </h2>
+      <p class="text-base text-center mt-2">現在は
+        <span class="font-bold">ご紹介制</span>とさせていただいております。ご了承くださいませm(_ _)m</p>
       <p class="text-base mt-10">
         何にも邪魔されず、目の前の作りたいものに没頭できる環境を目指しています。
         宿泊利用は1日1組様のためオンラインミーティングも可能です。(WiFiもご自由にご利用ください。）<br />
@@ -215,11 +217,11 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
             開発スペースを使って様々なイベントを開催しています。よろしければごらんください!
           </p>
           <a
-            href="https://coderdojo-hachinohe.aomori.jp/posts/43109806"
+            href="https://coderdojo-hachinohe.aomori.jp/pages/4569206/blog"
             target="_blank"
             class="text-teal-600 underline"
           >
-            海が見えるゲストハウスで美味しいコーヒーを飲みながら作品作り！第20回CoderDojo八戸
+            ゲストハウスで美味しいコーヒーを飲みながら作品作り！CoderDojo八戸
           </a>
         </div>
       </div>
