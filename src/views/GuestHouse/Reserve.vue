@@ -62,7 +62,7 @@ import { ref } from "vue";
           >にご記入の上送信をお願いします。
           <p class="text-sm mt-2">
           ※その他のお問い合わせにつきましては、
-          <a href="guest_house/contact" class="underline">問い合わせフォーム</a>からご連絡をお願いいたします
+          <a href="/guest_house/contact" class="underline">お問い合わせフォーム</a>からご連絡をお願いいたします
         </p>
         </li>
         <li class="font-bold mt-6">
