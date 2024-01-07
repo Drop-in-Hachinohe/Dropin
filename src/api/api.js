@@ -39,6 +39,19 @@ export default {
     })
     return response.json();
   },
+  async fetchWorks() {
+    const response = await fetch(`${apiPoint}works?limit=100`, {
+      method: 'GET', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json',
+        'X-MICROCMS-API-KEY': `${import.meta.env.VITE_API_KEY}`
+      },
+    })
+    return response.json();
+  },
   async postContact(postData) {
     const response = await fetch(`${apiPoint}contact`, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.

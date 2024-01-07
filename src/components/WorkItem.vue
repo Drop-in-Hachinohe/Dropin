@@ -15,15 +15,15 @@ windowWidth.value = window.innerWidth;
 windowHeight.value = window.innerHeight;
 
 function setWidth() {
-  return (props.content.size == "half") && (windowWidth.value > windowHeight.value) ? "img_height" : "img_width"
+  return props.content.isPortrait && (windowWidth.value > windowHeight.value) ? "img_height" : "img_width"
 }
 </script>
 
 <template>
   <div class="modal_overlay" @click="$emit('close')">
     <div :class="setWidth()">
-      <img :src="content.imageUrl" >
-      <p class="text-white text-center text-sm">{{content.description}}</p>
+      <img :src="content.image.url" >
+      <p class="text-white text-center text-sm mt-2">{{content.description}}</p>
     </div>
   </div>
 </template>
