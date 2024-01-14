@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/news/*", "destination": "/api/bot_index" },
+    { "source": "/news/:match*", "destination": "/api/bot_index" },
     { "source": "/:path*", "destination": "/index.html" }
   ]
 }
