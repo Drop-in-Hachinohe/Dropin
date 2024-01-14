@@ -1,3 +1,7 @@
 {
-  "rewrites": [{ "source": "/:path*", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/news/:match*", "destination": "/api/bot_index" },
+    { "source": "/:path*", "destination": "/index.html" }
+  ]
 }
+
