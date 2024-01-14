@@ -1,3 +1,5 @@
 {
-  "rewrites": [{ "source": "/:path*", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "^[/api/bot_index]", "destination": "/index.html" }
+  ]
 }
