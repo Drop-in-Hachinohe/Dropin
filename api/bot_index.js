@@ -21,19 +21,19 @@ async function fetchNews(id = '') {
 }
 
 export default async function handler(req, res) {
-  const userAgent = req.headers['user-agent'];
-  const isBotAccess = bots.some((bot) => userAgent.includes(bot));
+  // const userAgent = req.headers['user-agent'];
+  // const isBotAccess = bots.some((bot) => userAgent.includes(bot));
 
-  if (isBotAccess) {
+  // if (isBotAccess) {
     const newsIdIndex = req.url.match(/hoge\//).index + 5;
     // const newsIdIndex = req.url.match(/news\//).index + 5;
     const newsId = req.url.substr(newsIdIndex)
     const apiData = await fetchNews(newsId)
-    res.write(botHTML(apiData.ogp.url, apiData.title))
+    res.write(botHTML(apiData.title, apiData.ogp.url))
     res.end();
     return
-  }
-  return
+  // }
+  // return
   // res.redirect(req.url)
 }
 
