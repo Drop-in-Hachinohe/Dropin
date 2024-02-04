@@ -32,7 +32,8 @@ export default async function handler(req, res) {
     res.end();
     return
   }
-  res.redirect(req.url)
+  return
+  // res.redirect(req.url)
 }
 
 function botHTML(description, ogImage) {
