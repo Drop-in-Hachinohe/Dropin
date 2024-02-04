@@ -1,6 +1,24 @@
 {
   "rewrites": [
-    { "source": "/:path*", "destination": "/index.html" }
+    {
+      "source": "/hoge/:path*",
+      "destination": "/api/bot_index"
+    },
+    {
+      "source": "/news/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(Twitterbot|facebookexternalhit|Slackbot-LinkExpanding)"
+        }
+      ],
+      "destination": "/api/bot_index"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
   ]
 }
 
