@@ -6,7 +6,7 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": "(Twitterbot|facebookexternalhit|Slackbot-LinkExpanding)"
+          "value": ".*(Twitterbot|facebookexternalhit|Slackbot-LinkExpanding).*"
         }
       ],
       "destination": "/api/bot_index"
