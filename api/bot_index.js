@@ -32,7 +32,7 @@ export default async function handler(req, res) {
       }],
     }
     res.writeHead(200, botHeaders);
-    res.write(botHTML("test","test", req))
+    res.write(botHTML(apiData.ogp.url, apiData.title, req))
     res.end();
     return;
   }
