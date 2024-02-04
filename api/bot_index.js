@@ -14,7 +14,7 @@ async function fetchNews(id = '') {
     credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json',
-      'X-MICROCMS-API-KEY': "d1601aa8c7164811bca26d21ebecff3e4811"
+      'X-MICROCMS-API-KEY': `${process.env.VITE_API_KEY}`
     },
   })
   return response.json();
