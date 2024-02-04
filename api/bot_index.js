@@ -1,45 +1,41 @@
+const fetch = require('node-fetch'); 
+const apiPoint = 'https://dropinminato.microcms.io/api/v1/';
 const bots = [
   'Twitterbot',
   'facebookexternalhit',
   'Slackbot-LinkExpanding'
 ];
-const apiPoint = 'https://dropinminato.microcms.io/api/v1/';
 
 async function fetchNews(id = '') {
   const response = await fetch(`${apiPoint}news/${id}`, {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
+    method: 'GET',
+    mode: 'cors',
+    cache: 'no-cache',
+    credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json',
-      'X-MICROCMS-API-KEY': `${import.meta.env.VITE_API_KEY}`
+      'X-MICROCMS-API-KEY': "d1601aa8c7164811bca26d21ebecff3e4811"
     },
   })
   return response.json();
 }
 
 export default async function handler(req, res) {
-  const userAgent = req.headers['user-agent'][0].value;
+  const userAgent = req.headers['user-agent'];
   const isBotAccess = bots.some((bot) => userAgent.includes(bot));
 
   if (isBotAccess) {
-    const apiData = await fetchNews('k94cidqsz')
-    const botHeaders = {
-      'content-type': [{
-          key: 'Content-Type',
-          value: 'text/html; charset=UTF-8',
-      }],
-    }
-    res.writeHead(200, botHeaders);
+    const newsIdIndex = req.url.match(/news\//).index + 5;
+    const newsId = req.url.substr(newsIdIndex)
+    const apiData = await fetchNews(newsId)
     res.write(botHTML(apiData.ogp.url, apiData.title, req))
     res.end();
-    return;
+    return
   }
-  res.redirect(req)
+  res.redirect(req.url)
 }
 
-const botHTML = (description, ogImage, request) => {
+function botHTML(description, ogImage) {
   return `
   <!doctype html>
   <html lang="ja">
@@ -56,9 +52,6 @@ const botHTML = (description, ogImage, request) => {
   <meta name="twitter:site" content="@Dropin88" />
   <title>Drop in</title>
   </head>
-  <body>
-  ${request}
-  </body>
   </html>
   `
 };
