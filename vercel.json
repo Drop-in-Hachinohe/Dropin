@@ -2,10 +2,6 @@
   "rewrites": [
     {
       "source": "/hoge/:path*",
-      "destination": "/api/bot_index"
-    },
-    {
-      "source": "/news/:path*",
       "has": [
         {
           "type": "header",
