@@ -25,7 +25,8 @@ export default async function handler(req, res) {
   const isBotAccess = bots.some((bot) => userAgent.includes(bot));
 
   if (isBotAccess) {
-    const newsIdIndex = req.url.match(/news\//).index + 5;
+    const newsIdIndex = req.url.match(/hoge\//).index + 5;
+    // const newsIdIndex = req.url.match(/news\//).index + 5;
     const newsId = req.url.substr(newsIdIndex)
     const apiData = await fetchNews(newsId)
     res.write(botHTML(apiData.ogp.url, apiData.title, req))
