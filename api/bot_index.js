@@ -39,7 +39,7 @@ export default async function handler(req, res) {
 
 function botHTML(description, ogImage) {
   return `
-  <!doctype html>
+  <!DOCTYPE html>
   <html lang="ja">
   <head>
   <meta charset="UTF-8" />
@@ -52,6 +52,9 @@ function botHTML(description, ogImage) {
   <meta property="og:image" content="${ogImage}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@Dropin88" />
+  <meta name="twitter:title" content="Drop in｜${description}" />
+  <meta name="twitter:description" content="${description}" />
+  <meta name="twitter:image" content="${ogImage}" />
   <title>Drop in</title>
   </head>
   </html>
