@@ -25,7 +25,7 @@ export default async function handler(req, res) {
   const newsId = req.url.substr(newsIdIndex)
   const apiData = await fetchNews(newsId)
   console.log(apiData)
-  res.writeHead(200, { 'Content-Type': 'application/json'})
+  res.writeHead(200, { 'Content-Type': 'text/html'})
   res.write(botHTML(apiData.title, apiData.ogp.url))
   res.end();
   return
