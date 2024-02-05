@@ -101,7 +101,7 @@ Api.fetchNewsIndex('kurokamome', true).then((data) => {
       <h2 class="text-center text-slate-700 text-2xl font-bold py-16">
         お知らせ
       </h2>
-      <NewsList :newsList="news" :parentRoute="''" />
+      <NewsList :newsList="news" :parentRoute="'kurokamome'" />
       <div class="flex justify-center mt-10">
         <a
           href="/kurokamome/news"
