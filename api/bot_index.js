@@ -44,7 +44,7 @@ function botHTML(description, ogImage) {
   <meta property="og:description" content="${description}" />
   <meta property="og:site_name" content="Drop in" />
   <meta property="og:image" content="${ogImage}" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@Dropin88" />
   <meta name="twitter:title" content="Drop in｜${description}" />
   <meta name="twitter:description" content="${description}" />
