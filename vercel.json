@@ -6,7 +6,40 @@
         {
           "type": "header",
           "key": "user-agent",
-          "value": ".*(Twitterbot|facebookexternalhit|Slackbot-LinkExpanding).*"
+          "value": ".*(Twitterbot|twitter|facebookexternalhit|Slackbot-LinkExpanding).*"
+        }
+      ],
+      "destination": "/api/bot_index"
+    },
+    {
+      "source": "/kurokamome/news/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Twitterbot|twitter|facebookexternalhit|Slackbot-LinkExpanding).*"
+        }
+      ],
+      "destination": "/api/bot_index"
+    },
+    {
+      "source": "/space/news/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Twitterbot|twitter|facebookexternalhit|Slackbot-LinkExpanding).*"
+        }
+      ],
+      "destination": "/api/bot_index"
+    },
+    {
+      "source": "/guest_house/news/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Twitterbot|twitter|facebookexternalhit|Slackbot-LinkExpanding).*"
         }
       ],
       "destination": "/api/bot_index"
