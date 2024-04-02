@@ -4,6 +4,7 @@ import Api from '../../api/api.js'
 import NewsList from '../../components/NewsList.vue'
 import LINE from '@/components/Line.vue'
 import Access from '@/components/Access.vue'
+import YinkyaCafeBanner from '@/components/YinkyaCafeBanner.vue'
 
 const examples = [
   { 
@@ -125,7 +126,6 @@ Api.fetchNewsIndex('space', true).then((data) => {
     <section class="section pt-20" id="join">
       <h2 class="font-pixel text-slate-500 text-4xl text-center">JOIN!</h2>
       <p class="text-base text-slate-500　text-center">どうやって参加するの？</p>
-      <!-- <h3 class="text-center text-lg font-bold text-red-600 mt-6">2023年3月頃活動開始予定です。現在お問い合わせのみ受け付けております。</h3> -->
       <div class="text-lg mt-20">
         <dl>
           <dt class="font-bold text-center underline">対象</dt>
@@ -144,6 +144,9 @@ Api.fetchNewsIndex('space', true).then((data) => {
           </dd>
         </dl>
       </div>
+      <div class="mt-10">
+        <YinkyaCafeBanner />
+      </div>
       <div class="text-center mt-20">まずはLINEで中の人とお話ししましょう！</div>
       <LINE />
       
@@ -153,7 +156,7 @@ Api.fetchNewsIndex('space', true).then((data) => {
         <h2 class="font-pixel text-slate-500 text-4xl text-center">ACCESS</h2>
         <p class="text-base text-slate-500　text-center">どこにある？</p>
         <Access />
-        <p class="text-lg font-bold text-center mt-16">バーチャルスペース GatherもOK!</p>
+        <!-- <p class="text-lg font-bold text-center mt-16">バーチャルスペース GatherもOK!</p>
         <p class="text-base mt-6">
           直接くるのが難しい！という場合はパソコンやスマホからアクセスできる空間も用意しています。
           Gatherというアプリケーションを使ったバーチャル空間です。
@@ -161,7 +164,7 @@ Api.fetchNewsIndex('space', true).then((data) => {
         <div class="md:flex justify-center mt-8">
           <img src="/images/main/gather.png" class="aspect-video w-full md:w-6/12 px-1"/>
           <iframe class="aspect-video w-full md:w-6/12 px-1" src="https://www.youtube.com/embed/SA5Hgbal7co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </div> -->
       </section>
     </div>
     <div class="section">

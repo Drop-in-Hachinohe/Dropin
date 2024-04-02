@@ -3,6 +3,7 @@ import { ref } from "vue";
 import Api from "../../api/api.js";
 import NewsList from "../../components/NewsList.vue";
 import Access from '@/components/Access.vue'
+import YinkyaCafeBanner from '@/components/YinkyaCafeBanner.vue'
 
 const services = [
   { 
@@ -49,13 +50,16 @@ Api.fetchNewsIndex('', true).then((data) => {
       </div>
     </div>
     <section class="section mt-10">
-      <p class="text-base mt-10">
+      <p class="text-base">
         無邪気な心で将来の夢に向かって頑張る陽キャが眩しい。<br>
         清く正しく明るい陽キャと自分をどうしても比べてしまう。そして落ち込んでしまう。
         陽キャになろうと頑張ってみたけどどうしても疲れるし無理だった。<br>
         <br>
         そんな人間が、陰キャを認めて陰キャを思いっきり楽しむために、楽しそうだと思ったことを色々やっています。
       </p>
+      <div class="mt-10">
+        <YinkyaCafeBanner />
+      </div>
       <ul class="flex flex-wrap items-end justify-center mt-20 pb-20">
         <a v-for="(service, index) in services" :key="index" :href="service.url" target="_blank"
           class="rounded-md p-6 hover:shadow-2xl w-1/2 md:w-72 lg:w-1/4">
