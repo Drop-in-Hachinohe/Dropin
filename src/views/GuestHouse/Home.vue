@@ -4,6 +4,7 @@ import Api from "../../api/api.js";
 import NewsList from "../../components/NewsList.vue";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
+import YinkyaCafeBanner from '@/components/YinkyaCafeBanner.vue'
 
 const settings = {
   itemsToShow: 1,
@@ -206,17 +207,18 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
             <Pagination />
           </template>
         </Carousel>
-        <div class="text-sm mt-8">
-          <p class="font-bold">
-            開発スペースを使って様々なイベントを開催しています。よろしければごらんください!
+        <div class="mt-8 flex flex-col items-center">
+          <p class="text-center font-bold text-lg">
+            \開発スペースを使って様々なイベントを開催しています。よろしければごらんください/
           </p>
           <a
             href="https://coderdojo-hachinohe.aomori.jp/pages/4569206/blog"
             target="_blank"
-            class="text-teal-600 underline"
+            class="text-teal-600 underline py-3"
           >
             ゲストハウスで美味しいコーヒーを飲みながら作品作り！CoderDojo八戸
           </a>
+          <YinkyaCafeBanner />
         </div>
       </div>
     </section>
