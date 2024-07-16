@@ -50,7 +50,10 @@ Api.fetchNewsIndex('', true).then((data) => {
       </div>
     </div>
     <section class="section mt-10">
-      <h2 class="text-stone-700 text-2xl font-bold">
+      <p class="text-stone-500 text-2xl font-bold underline">
+        陰キャとは、他者とのコミュニケーションで自己が削られてしまう全ての人間である
+      </p>
+      <h2 class="text-stone-700 text-xl font-bold mt-16">
         Drop in って何?
       </h2>
       <p class="text-base mt-8">
@@ -60,15 +63,15 @@ Api.fetchNewsIndex('', true).then((data) => {
         <br>
         そんな人間が、陰キャを認めて陰キャを思いっきり楽しむために、楽しそうだと思ったことを色々やっています。
       </p>
-      <h2 class="text-stone-700 text-2xl font-bold mt-16">
+      <h2 class="text-stone-700 text-xl font-bold mt-16">
         居場所っていう言葉が好きじゃないんです
       </h2>
       <p class="text-base mt-8">
         「〇〇の居場所」みたいなのが好きじゃないんです。<br>
-        <span class="font-bold">別に誰がどこにいたっていいわけで、居場所がないんじゃなくて、
+        <span class="font-bold">別に誰がどこにいたっていいわけで、居場所がないわけではなくて、
         今の世界が居心地を悪くさせてるだけだと思ってます。</span><br>
         「〇〇の居場所」を作ることで、そこ以外に居場所がないことを太鼓判押されているようで、嫌。<br>
-        <small>※居場所が必要なのは、同じ属性だけで集まりたい人たち（例えば喫煙者とか、○歳以上の人とか）のほうではないかと。</small>
+        <small>※同じ属性だけで集まりたい人たち（例えば喫煙者とか、○歳以上の人とか）が、あえて居場所を作るのは良いと思うんですけどね。</small>
         <br><br>
         例えば「平日のこんな時間に学生が?」って思ってしまう人が多く、そう思われていることを本人も感じてしまうから非常に居心地が悪い。<br>
         私はそう思わないので、そう思わないよって言いたい。
@@ -92,22 +95,28 @@ Api.fetchNewsIndex('', true).then((data) => {
 
     <div class="bg-slate-100" id="access">
       <section class="section pt-20">
-        <h2 class="text-slate-500 text-4xl text-center">ACCESS</h2>
+        <h2 class="text-slate-700 text-2xl text-center font-bold">拠点</h2>
         <Access />
       </section>
     </div>
-    <div class="section">
-      <h2 class="text-center text-slate-700 text-2xl font-bold py-16">
-        お知らせ
-      </h2>
-      <NewsList :newsList="news" :parentRoute="''" />
-      <div class="flex justify-center mt-10">
-        <a
-          href="/news"
-          class="btn w-fit bg-slate-600 text-white px-6 py-3 text-sm"
-          >お知らせ一覧へ</a
-        >
-      </div>
+    <section class="section pt-20">
+      <h2 class="text-slate-700 text-2xl text-center font-bold">イベント</h2>
+      <iframe class="w-full mt-1" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=0&showCalendars=0&src=ZHJvcGluLmhhY2hpbm9oZUBnbWFpbC5jb20&src=MjZiYjA4M2E1NGY0YTdlNzc5MjAyMjcxYmJmNmQ3NmRjYjFmMzNhODcwMjVlNjRkODk0OGNjMTkyMDA5ZTE3ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%233F51B5" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
+    <div class="bg-slate-100">
+      <section class="section">
+        <h2 class="text-center text-slate-700 text-2xl font-bold">
+          お知らせ
+        </h2>
+        <NewsList :newsList="news" :parentRoute="''" class="mt-10" />
+        <div class="flex justify-center mt-10">
+          <a
+            href="/news"
+            class="btn w-fit bg-slate-600 text-white px-6 py-3 text-sm"
+            >お知らせ一覧へ</a
+          >
+        </div>
+      </section>
     </div>
   </main>
 </template>
