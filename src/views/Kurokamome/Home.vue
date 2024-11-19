@@ -49,10 +49,10 @@ Api.fetchNewsIndex('kurokamome', true).then((data) => {
     <div class="bg_cloth">
       <section class="section">
         <p class="text-base mt-10 font-yu">
-          正式メンバーは石橋（バスクラリネット）だけのアンサンブルです。<br>
-          <span class="font-bold">「奏者が勝手に楽しいアンサンブル」</span>をコンセプトに、思いつくままにコンサートを企画して、コンサートごとにメンバーを探してチームを組みます。<br>
-          聴くコンサートではなくて、<span class="font-bold">「人と時間を楽しむコンサート」</span>を目指して試行錯誤しています。
-          保育施設や福祉施設でのコンサートなどの企画が好きです。
+          <span class="font-bold">「奏者が勝手に楽しいアンサンブル」</span>の黒かもめアンサンブルは、「陰キャが心地よく過ごせる時間をつくりたい」がコンセプトの 
+          <a class="underline" href="/" target="_blank">Drop in</a> の活動の一つです。
+          聴くコンサートではなくて、<span class="font-bold">「人と時間を楽しむコンサート」</span>を目指して思いつくままにコンサートを企画しています。
+          面白そう、と思ったらとりあえずやってみるスタイルです。
         </p>
 
         <h2 class="text-xl text-center font-bold text-slate-800 mt-20">過去の自主企画コンサートの一部</h2>
@@ -90,9 +90,8 @@ Api.fetchNewsIndex('kurokamome', true).then((data) => {
     
     <section class="section">
       <h2 class="text-slate-700 text-center text-xl font-bold">お問い合わせ / 一緒に演奏しよう！</h2>
-      <p class="text-slate-800 pt-8 pb-3">
-        黒かもめアンサンブルは基本的にバスクラの石橋が1人でやっており、団員・メンバーは存在しません。<br>
-        コンサートごとに奏者を募って本番を迎えるスタイルです。
+      <p class="text-slate-800 pt-8 pb-3 text-center">
+        黒かもめアンサンブルはコンサートごとに編成を変えて本番を迎えるスタイルです。<br>
         一緒に演奏してみたい！演奏を依頼したい！という方はお気軽にLINEでお問い合わせください！
       </p>
       <LINE />
