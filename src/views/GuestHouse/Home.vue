@@ -212,7 +212,7 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
             \開発スペースを使って様々なイベントを開催しています。よろしければごらんください/
           </p>
           <a
-            href="https://coderdojo-hachinohe.aomori.jp/pages/4569206/blog"
+            href="https://www.coderdojo-hachinohe.aomori.jp/reports"
             target="_blank"
             class="text-teal-600 underline py-3"
           >

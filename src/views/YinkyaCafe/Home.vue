@@ -1,6 +1,23 @@
 <script setup>
 import Access from '@/components/Access.vue'
 import Footer from '@/components/Footer.vue'
+import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+const settings = {
+  itemsToShow: 1,
+  snapAlign: "start",
+};
+const breakpoints = {
+  // 700px and up
+  640: {
+    itemsToShow: 1.25,
+    snapAlign: "start",
+  },
+  // 1024 and up
+  768: {
+    itemsToShow: 3,
+    snapAlign: "center",
+  },
+};
 
 const footerMenuList = [
   {
@@ -61,6 +78,29 @@ const snsList = [
     link: "https://github.com/YuukiIshibashi/Dropin",
   },
 ]
+
+const roomImages = [
+  {
+    imageUrl: "/images/yinkya/roomImage_01.jpg",
+    comment: "電源・Wifiご自由にどうぞ"
+  },
+  {
+    imageUrl: "/images/yinkya/roomImage_02.jpg",
+    comment: "飲食持ち込みOK"
+  },
+  {
+    imageUrl: "/images/yinkya/roomImage_03.jpg",
+    comment: "飲み物も自分も淹れるんだよ(200円〜)"
+  },
+  {
+    imageUrl: "/images/yinkya/roomImage_04.jpg",
+    comment: "お子・赤さんも大歓迎"
+  },
+  {
+    imageUrl: "/images/yinkya/roomImage_05.jpg",
+    comment: "ごろごろしてって"
+  }
+];
 </script>
 
 <template>
@@ -83,12 +123,27 @@ const snsList = [
         ただ、ここに集うは陰キャのみ。眩しすぎる陽キャと対面することはないのである。
       </p>
     </section>
-    <section class="section coffee">
-      <img src="/images/yinkya/coffee.png" class="coffee_img" />
-      <p class="px-10 font-bold text-l">
-        おいしいCoffeeは、、、<br>自分で淹れるスタイル m(_ _)m<br>(200円〜)
-      </p>
-    </section>
+    <div class="bg-stone-200">
+      <section class="section mt-20">
+        <h2 class="text-center font-pixel text-stone-700 text-2xl font-bold">
+          カフェという名の隠れ家
+        </h2>
+        <div class="mt-20">
+          <Carousel :settings="settings" :breakpoints="breakpoints">
+          <Slide v-for="(item, index) in roomImages" :key="index">
+            <div class="carousel__item">
+              <p class="mb-10 text-stone-700">{{ item.comment }}</p>
+              <img :src="item.imageUrl" class="aspect-square" />
+            </div>
+          </Slide>
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
+        </div>
+      </section>
+    </div>
     <section class="section event_date">
       <h2 class="text-center text-white text-2xl font-bold font-pixel">
         いつやってるの
