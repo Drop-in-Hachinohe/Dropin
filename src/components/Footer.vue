@@ -31,12 +31,12 @@ defineProps({
 <template>
   <div :class="[textColorClass, bgColorClass]">
     <section class="section">
-      <section class="sm:flex sm:justfy-between sm:items-center">
-        <router-link :to="headerLogoLink">
+      <section class="sm:flex sm:items-start">
+        <router-link :to="headerLogoLink" class="shrink-0">
           <img :src="headerLogoImg" class="w-28"/>
         </router-link>
-        <ul class="flex sm:ml-6">
-          <li v-for="sns in snsList" class="flex frex-col items-center">
+        <ul class="flex sm:ml-6 shrink-0">
+          <li v-for="sns in snsList" class="flex items-center">
             <a :href="sns.link" target="_blank">
               <img :src="`/images/sns/icon_${sns.name}.svg`" class="w-12 px-1"/>
             </a>
@@ -45,6 +45,11 @@ defineProps({
             <slot />
           </li>
         </ul>
+        <div class="sm:ml-6 mt-6 sm:mt-0">
+          <a href="https://line.me/S/sticker/29465217" target="_blank">
+            <img src="/images/common/line_sticker.jpg"/>
+          </a>
+        </div>
       </section>
       <section>
         <ul class="md:flex mt-20">
