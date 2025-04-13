@@ -116,23 +116,16 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
       </div>
     </div>
     <section class="section mt-10">
-      <h2 class="text-2xl text-center font-bold text-red-700">
+      <!-- <h2 class="text-2xl text-center font-bold text-red-700">
         申し訳ございません　<br>
         Drop inは現在冬季休業中です
-      </h2>
-      <!-- <div class="flex justify-center items-center">
-        <img src="/images/GH/training.png" class="mt-10 w-full sm:w-8/12 md:w-9/12"/>
-      </div>
-      <p class="text-base mt-10">
-        管理人の娘がトイレトレーニング奮闘中ですが、管理人の掃除が追いつかず、宿泊や開発スペースご利用の方に
-        不快な思いをさせる危険があるため、休業させていただきますm(_ _)m
-      </p> -->
+      </h2> -->
     </section>
     <section class="section mt-10">
       <h2 class="text-2xl text-center font-bold">
         Drop inは、開発合宿・ワーケーション特化型ゲストハウスです
       </h2>
-      <p class="text-base text-center mt-2">現在は
+      <p class="text-base text-center mt-2 text-red-700">現在は
         <span class="font-bold">ご紹介制</span>とさせていただいております。ご了承くださいませm(_ _)m</p>
       <p class="text-base mt-10">
         何にも邪魔されず、目の前の作りたいものに没頭できる環境を目指しています。
