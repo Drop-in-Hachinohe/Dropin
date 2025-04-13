@@ -18,10 +18,10 @@ import { ref } from "vue";
   <section class="section mt-16">
     <h2 class="text-slate-700 text-4xl text-center">RESERVE</h2>
     <p class="text-base text-slate-700 text-center">ご予約(ご紹介制)</p>
-    <h2 class="text-2xl text-center font-bold text-red-700 mt-16">
+    <!-- <h2 class="text-2xl text-center font-bold text-red-700 mt-16">
       申し訳ございません　<br>
       Drop inは現在営業休止中です
-    </h2>
+    </h2> -->
     <div class="text-center mt-16">
       <span class="underline underline-offset-8 text-slate-700">
         <span class="text-xl font-bold"
@@ -76,7 +76,7 @@ import { ref } from "vue";
       </ol>
       
       <p class="text-sm font-bold text-red-600 mt-8">
-        ・管理人の他に3歳の子供が同じ家で生活しております。ご了承ください。
+        ・管理人の他に4歳の子供が同じ家で生活しております。ご了承ください。
       </p>
       <p class="text-sm font-bold text-red-600">
         ・お食事のご用意はございませんので、自炊か外食でお願いしております。
@@ -119,13 +119,13 @@ import { ref } from "vue";
       frameborder="0"
       scrolling="no"
     ></iframe>
-    <!-- <div class="flex justify-center mt-10">
+    <div class="flex justify-center mt-10">
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSfVfmJqvZoKZa13vGnt2Ho6ZuWUvrQnGZVwQE69gbBxdSyZkw/viewform"
         class="btn w-fit bg-teal-600 text-white px-6 py-3 text-lg"
         target="_blank"
         >申し込みフォームはこちら</a
       >
-    </div> -->
+    </div>
   </section>
 </template>
