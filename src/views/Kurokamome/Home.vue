@@ -14,8 +14,8 @@ const pastFlyers = [
     date: '2023/8/6',
   },
   { 
-    imageUrl: '/images/kurokamome/garden.jpg',
-    date: '2020/3/20',
+    imageUrl: '/images/kurokamome/game_anime.jpg',
+    date: '2024/12/7',
   },
 ]
 const pastConcert = [
@@ -48,13 +48,40 @@ Api.fetchNewsIndex('kurokamome', true).then((data) => {
     </div>
     <div class="bg_cloth">
       <section class="section">
-        <p class="text-base mt-10 font-yu">
-          <span class="font-bold">「奏者が勝手に楽しいアンサンブル」</span>の黒かもめアンサンブルは、「陰キャが心地よく過ごせる時間をつくりたい」がコンセプトの 
-          <a class="underline" href="/" target="_blank">Drop in</a> の活動の一つです。
-          聴くコンサートではなくて、<span class="font-bold">「人と時間を楽しむコンサート」</span>を目指して思いつくままにコンサートを企画しています。
+        <h2 class="text-xl text-center font-bold text-slate-800">
+          下手でも人前で演奏したっていい
+        </h2>
+        <p class="text-md mt-10 font-yu">
+          音楽の才能があるわけじゃない。音大に行ったわけでもない。自分の周りには、そんなに練習しなくても楽譜なんかなくてもその場で演奏できる人がいる。
+          <br />
+          だから、黒かもめは一生懸命練習します。自分の生活の合間になんとか練習をねじ込みます。聴いてくれる人に喜んでもらえるように、たくさん練習します。
+          そうやってたくさん練習したんだから、最終的に上手くならなくても、
+          <span class="font-bold">下手でも人前で演奏したっていい</span>んです。
+          <br />
+          <br />
+          静かに聴いてもらうコンサートは少し苦手です。<span class="font-bold">「人と時間を楽しむコンサート」</span>を目指して、思いつくままに企画しています。
           面白そう、と思ったらとりあえずやってみるスタイルです。
+          <br />
+          <small>※黒かもめアンサンブルは、「陰キャが心地よく過ごせる時間をつくりたい」がコンセプトの <a class="underline" href="/" target="_blank">Drop in</a> の活動の一つです。</small>
         </p>
-
+      </section>
+    </div>
+    <div v-if="news.length > 0" class="section">
+      <h2 class="text-center text-slate-700 text-2xl font-bold py-16">
+        開催予定のコンサート
+        <small>(お知らせもあるよ)</small>
+      </h2>
+      <NewsList :newsList="news" :parentRoute="'kurokamome'" />
+      <div class="flex justify-center mt-10">
+        <a
+          href="/kurokamome/news"
+          class="btn w-fit bg-kurokamome-yellow text-white px-6 py-3 text-sm"
+          >過去の記事一覧へ</a
+        >
+      </div>
+    </div>
+    <div class="bg_cloth">
+      <section class="section">
         <h2 class="text-xl text-center font-bold text-slate-800 mt-20">過去の自主企画コンサートの一部</h2>
         <ul class="flex flex-wrap items-end justify-center pb-20">
           <li v-for="(flyer, index) in pastFlyers" :key="index" 
@@ -96,19 +123,6 @@ Api.fetchNewsIndex('kurokamome', true).then((data) => {
       </p>
       <LINE />
     </section>
-    <div v-if="news.length > 0" class="section">
-      <h2 class="text-center text-slate-700 text-2xl font-bold py-16">
-        お知らせ
-      </h2>
-      <NewsList :newsList="news" :parentRoute="'kurokamome'" />
-      <div class="flex justify-center mt-10">
-        <a
-          href="/kurokamome/news"
-          class="btn w-fit bg-kurokamome-yellow text-white px-6 py-3 text-sm"
-          >お知らせ一覧へ</a
-        >
-      </div>
-    </div>
   </main>
 </template>
 
