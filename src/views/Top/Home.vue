@@ -3,7 +3,7 @@ import { ref } from "vue";
 import Api from "../../api/api.js";
 import NewsList from "../../components/NewsList.vue";
 import Access from '@/components/Access.vue'
-import YinkyaCafeBanner from '@/components/YinkyaCafeBanner.vue'
+import CafeBanner from '@/components/CafeBanner.vue'
 
 const services = [
   { 
@@ -78,7 +78,7 @@ Api.fetchNewsIndex('', true).then((data) => {
         誰がどこにいたって居心地が悪くない世界にしたく、私は私の基準で好きなことやっていきますよ。
       </p>
       <div class="mt-10">
-        <YinkyaCafeBanner />
+        <CafeBanner />
       </div>
       <ul class="flex flex-wrap items-end justify-center mt-20 pb-20">
         <a v-for="(service, index) in services" :key="index" :href="service.url" target="_blank"

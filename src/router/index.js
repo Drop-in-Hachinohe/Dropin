@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import TopApp from '../views/Top/_App.vue'
 import TopHome from '../views/Top/Home.vue'
 import YinkyaCafeHome from '../views/YinkyaCafe/Home.vue'
+import ShimekiriCafeHome from '../views/Shimekiri/Home.vue'
 import GuestHouseApp from '../views/GuestHouse/_App.vue'
 import GuestHouseHome from '../views/GuestHouse/Home.vue'
 import GuestHouseAccess from '../views/GuestHouse/Access.vue'
@@ -59,6 +60,11 @@ const router = createRouter({
       path: '/yinkya_cafe',
       name: 'YinkyaCafe',
       component: YinkyaCafeHome
+    },
+    {
+      path: '/shimekiri_cafe',
+      name: 'ShimekiriCafe',
+      component: ShimekiriCafeHome
     },
     {
       path: '/guest_house',
