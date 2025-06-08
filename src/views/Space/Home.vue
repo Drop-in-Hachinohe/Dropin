@@ -4,7 +4,7 @@ import Api from '../../api/api.js'
 import NewsList from '../../components/NewsList.vue'
 import LINE from '@/components/Line.vue'
 import Access from '@/components/Access.vue'
-import YinkyaCafeBanner from '@/components/YinkyaCafeBanner.vue'
+import CafeBanner from '@/components/CafeBanner.vue'
 
 const examples = [
   { 
@@ -145,7 +145,7 @@ Api.fetchNewsIndex('space', true).then((data) => {
         </dl>
       </div>
       <div class="mt-10">
-        <YinkyaCafeBanner />
+        <CafeBanner />
       </div>
       <div class="text-center mt-20">まずはLINEで中の人とお話ししましょう！</div>
       <LINE />

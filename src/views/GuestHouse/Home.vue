@@ -4,7 +4,7 @@ import Api from "../../api/api.js";
 import NewsList from "../../components/NewsList.vue";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
-import YinkyaCafeBanner from '@/components/YinkyaCafeBanner.vue'
+import CafeBanner from '@/components/CafeBanner.vue'
 
 const settings = {
   itemsToShow: 1,
@@ -211,7 +211,7 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
           >
             ゲストハウスで美味しいコーヒーを飲みながら作品作り！CoderDojo八戸
           </a>
-          <YinkyaCafeBanner />
+          <CafeBanner />
         </div>
       </div>
     </section>
