@@ -126,6 +126,11 @@ const facilities = [
 </script>
 
 <template>
+  <div class="banner">
+    <a href="https://www.dropin8.jp/news/roljf9b_kg" target="_blank" class="underline text-white">
+      【7月末まで期間限定】ご利用の方にコンサートチケットプレゼント
+    </a>
+  </div>
   <main>
     <div class="kv">
       <div class="kv_inner">
@@ -311,6 +316,19 @@ const facilities = [
 </template>
 
 <style lang="scss" scoped>
+.banner {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background: #f578ae;
+  background: radial-gradient(circle, rgba(245, 120, 174, 1) 0%, rgba(112, 162, 219, 1) 100%);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .3);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .kv {
   background-image: url("/images/shimekiri/shimekiri_kv.jpg");
   height: 400px;
