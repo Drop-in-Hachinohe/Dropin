@@ -12,7 +12,7 @@ const headerMenuList = ref([
   },
   {
     name: "過去動画",
-    link: "https://www.youtube.com/@user-yk8qe2nv2h",
+    link: "https://www.youtube.com/@%E9%BB%92%E3%81%8B%E3%82%82%E3%82%81%E3%82%A2%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%96%E3%83%AB",
     imageUrl: '/images/common/header/icon_video.png',
     target: true
   },
@@ -34,7 +34,7 @@ const footerMenuList = ref([
     itemList: [
       {
         name: "過去動画",
-        link: "https://www.youtube.com/@user-yk8qe2nv2h",
+        link: "https://www.youtube.com/@%E9%BB%92%E3%81%8B%E3%82%82%E3%82%81%E3%82%A2%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%96%E3%83%AB",
         target: true
       },
       {

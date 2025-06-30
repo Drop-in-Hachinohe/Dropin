@@ -105,7 +105,7 @@ Api.fetchNewsIndex('kurokamome', true).then((data) => {
         </ul>
 
         <div class="flex items-center justify-center pt-6 pb-3">
-          <a href="https://www.youtube.com/@user-yk8qe2nv2h" target="_blank">
+          <a href="https://www.youtube.com/@%E9%BB%92%E3%81%8B%E3%82%82%E3%82%81%E3%82%A2%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%96%E3%83%AB" target="_blank">
             <div class="flex items-center gap-3 bg-white px-4 py-2 rounded hover:shadow">
               <p class="text-sm">過去のコンサート動画</p>
               <img src="/images/kurokamome/youtube.jpg" class="w-20" />
