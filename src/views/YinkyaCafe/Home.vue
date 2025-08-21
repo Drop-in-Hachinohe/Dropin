@@ -185,6 +185,11 @@ const roomImages = [
           <div class="text-base p-6">
             直接くるのが難しい！という場合はパソコンやスマホからアクセスできる空間も用意しています。
             Gatherというアプリケーションを使ったバーチャル空間です。
+            <div class="text-red-600 font-bold mt-6">
+              オンライン会場は、Gatherの有料化に伴って2025年9月11日をもって一旦終了いたします。
+              今後もオンラインでも気軽に立ち寄れる場を作っていくため、何かしら考えたいと思いますが、、、
+              現時点で何もアイデアがないので、何かあれば教えてください！
+            </div>
             <div class="mt-6">
               <a
               href="https://app.gather.town/app/yLSLLa1pEscMrc1m/dropin"
