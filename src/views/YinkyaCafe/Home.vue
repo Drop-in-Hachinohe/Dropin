@@ -179,8 +179,8 @@ const roomImages = [
       <section class="section pt-20">
         <h2 class="text-stone-700 text-2xl text-center font-bold font-pixel">どこでやってるの</h2>
         <Access />
-        <h3 class="text-stone-700 text-xl text-center font-bold mt-16 font-pixel">オンラインもあるよ</h3>
-        <div class="md:flex justify-center mt-8">
+        <!-- <h3 class="text-stone-700 text-xl text-center font-bold mt-16 font-pixel">オンラインもあるよ</h3> -->
+        <!-- <div class="md:flex justify-center mt-8">
           <img src="/images/yinkya/yinkya_gather.png" class="aspect-video w-full md:w-6/12 px-1"/>
           <div class="text-base p-6">
             直接くるのが難しい！という場合はパソコンやスマホからアクセスできる空間も用意しています。
@@ -198,7 +198,7 @@ const roomImages = [
               >ここから参加できるよ</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
     </div>
     <section class="section" id="calender">
