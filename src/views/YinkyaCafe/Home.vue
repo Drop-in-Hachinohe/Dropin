@@ -112,6 +112,13 @@ const roomImages = [
       </div>
     </div>
     <section class="section">
+      <h2 class="text-2xl text-center font-bold text-red-700">
+        申し訳ございません<br>
+        陰キャカフェは現在冬季休業中です<br>
+        2026年2月下旬再開予定です
+      </h2>
+    </section>
+    <section class="section">
       <h2 class="text-center font-pixel text-stone-700 text-2xl font-bold">
         木曜日は陰キャであつまろ
       </h2>
