@@ -142,6 +142,13 @@ const facilities = [
       </div>
     </div>
     <section class="section">
+      <h2 class="text-2xl text-center font-bold text-red-700">
+        申し訳ございません<br>
+        シメキリカフェは現在冬季休業中です<br>
+        2026年4月以降に再開予定です
+      </h2>
+    </section>
+    <section class="section">
       <p class="text-base">
         シメキリに追われるアナタ。シメキリカフェで一気に仕上げちゃいませんか?<br>
         <br>

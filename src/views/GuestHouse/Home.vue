@@ -116,10 +116,11 @@ Api.fetchNewsIndex("guest_house", true).then((data) => {
       </div>
     </div>
     <section class="section mt-10">
-      <!-- <h2 class="text-2xl text-center font-bold text-red-700">
-        申し訳ございません　<br>
-        Drop inは現在冬季休業中です
-      </h2> -->
+      <h2 class="text-2xl text-center font-bold text-red-700">
+        申し訳ございません<br>
+        Drop inは現在冬季休業中です<br>
+        2026年4月以降に再開予定です
+      </h2>
     </section>
     <section class="section mt-10">
       <h2 class="text-2xl text-center font-bold">
