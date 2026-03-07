@@ -114,8 +114,8 @@ const roomImages = [
     <section class="section">
       <h2 class="text-2xl text-center font-bold text-red-700">
         申し訳ございません<br>
-        陰キャカフェは現在冬季休業中です<br>
-        2026年2月下旬再開予定です
+        現在、陰キャカフェはゲストハウス改装中に伴い休業中です<br>
+        2026年4月下旬再開予定です
       </h2>
     </section>
     <section class="section">
