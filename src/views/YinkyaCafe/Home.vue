@@ -288,15 +288,20 @@ const roomImages = [
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @media (min-width: 640px) {
+  @media (min-width: 900px) {
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end;
+  }
+  &:nth-child(even) {
+    @media (min-width: 900px) {
+      margin-left: 150px;
+    }
   }
   &_img {
     border-radius: 50%;
     max-width: 300px;
     margin-bottom: 20px;
-    @media (min-width: 640px) {
+    @media (min-width: 900px) {
       flex-direction: row;
       margin-bottom: 0px;
     }
