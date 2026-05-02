@@ -3,8 +3,8 @@
     <a href="/yinkya_cafe" class="w-9/12 md:w-1/2 shadow hover:shadow-2xl">
       <img src="/images/yinkya/yinkya_banner.jpg" alt="陰キャカフェ" class="rounded">
     </a>
-    <a href="/shimekiri_cafe" class="w-9/12 md:w-1/2 shadow hover:shadow-2xl">
+    <!-- <a href="/shimekiri_cafe" class="w-9/12 md:w-1/2 shadow hover:shadow-2xl">
       <img src="/images/shimekiri/shimekiri_banner.jpg" alt="シメキリカフェ" class="rounded">
-    </a>
+    </a> -->
   </div>
 </template>

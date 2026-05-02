@@ -61,11 +61,11 @@ const router = createRouter({
       name: 'YinkyaCafe',
       component: YinkyaCafeHome
     },
-    {
-      path: '/shimekiri_cafe',
-      name: 'ShimekiriCafe',
-      component: ShimekiriCafeHome
-    },
+    // {
+    //   path: '/shimekiri_cafe',
+    //   name: 'ShimekiriCafe',
+    //   component: ShimekiriCafeHome
+    // },
     {
       path: '/guest_house',
       name: 'GuestHouseApp',
