@@ -107,18 +107,20 @@ const roomImages = [
   <main>
     <div class="kv">
       <div class="kv_title">
-        <p class="text-white text-base font-pixel">あ、陽キャさんお断りなんです。ゴメンナサイ。</p>
-        <h1 class="text-white text-4xl font-pixel mt-8">陰キャカフェ</h1>
-      </div>
-      <div class="kv_message">
-         <p class="text-lg">
-          <span>陰キャカフェとは、その名の通り陰キャが集うカフェである。陰キャを自覚する者なら誰でも大歓迎である。</span><br>
-          <span>平日木曜日の日中という、「そんな時間にカフェ行けるんだへー」という時間帯に陰キャが集う。ニート、フリーランス、主婦、学校苦手勢、大歓迎なのである。</span><br>
-          <span><small>※「そんな時間にカフェ行けるんだへー」を嫌味で言ってくるやつは羨ましいだけなので放っておきましょう。</small></span>
+        <p class="text-white text-lg font-pixel">あ、陽キャさんお断りなんです。<br>ゴメンナサイ。</p>
+        <h1 class="text-white text-4xl font-pixel mt-4 mb-8">陰キャカフェ</h1>
+        <hr>
+        <div class="mt-16">
+         <p class="text-lg text-white">
+          <span>陰キャカフェとは、陰キャを自覚する者のためのカフェである。</span><br>
+          <span>平日の日中という、「そんな時間にカフェ行けるんだへー」という時間帯に陰キャが集う。ニート、フリーランス、主婦、学校苦手勢、大歓迎なのである。</span><br>
+          <small class="text-xs text-white">※「そんな時間にカフェ行けるんだへー」を嫌味で言ってくるやつは羨ましいだけなので放っておきましょう。</small>
           <br><br>
-          <span>ここで何をするかというと、飲み物片手に陰キャ話に花を咲かせてもよし、黙々作業するもよし。集まっていてもあくまでひとりはひとり。好きにすればよいのである。</span><br>
+          <span>ここで何をするかというと、飲み物片手に陰キャ話に花を咲かせてもよし、黙々作業するもよし。集まっていてもあくまでひとりはひとり。好きにすればよいのである。</span>
+          <br><br>
           <span>ただ、ここに集うは陰キャのみ。眩しすぎる陽キャと対面することはないのである。</span>
         </p>
+      </div>
       </div>
     </div>
     <!-- <section class="section">
@@ -260,7 +262,9 @@ const roomImages = [
   height: 1000px;
   background-size: cover;
   background-position: center;
-  padding-top: 50px;
+  @media (min-width: 640px) {
+    padding-top: 50px;
+  }
   &_title {
     &::before {
       content: '';
@@ -274,12 +278,6 @@ const roomImages = [
       mix-blend-mode: multiply;
     }
     padding: 40px;
-  }
-  &_message {
-    padding: 50px 30px 20px;
-    span {
-      background-color: #fff;
-    }
   }
 }
 .info {
