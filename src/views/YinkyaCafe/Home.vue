@@ -81,23 +81,23 @@ const snsList = [
 
 const roomImages = [
   {
-    imageUrl: "/images/yinkya/roomImage_01.jpg",
+    imageUrl: "/images/yinkya/roomImage_09.jpg",
     comment: "電源・Wifiご自由にどうぞ"
   },
   {
-    imageUrl: "/images/yinkya/roomImage_02.jpg",
+    imageUrl: "/images/yinkya/roomImage_07.jpg",
     comment: "飲食持ち込みOK"
   },
   {
-    imageUrl: "/images/yinkya/roomImage_03.jpg",
+    imageUrl: "/images/yinkya/roomImage_08.jpg",
     comment: "飲み物も自分も淹れるんだよ(200円〜)"
   },
   {
-    imageUrl: "/images/yinkya/roomImage_04.jpg",
+    imageUrl: "/images/yinkya/roomImage_06.jpg",
     comment: "お子・赤さんも大歓迎"
   },
   {
-    imageUrl: "/images/yinkya/roomImage_05.jpg",
+    imageUrl: "/images/yinkya/roomImage_10.jpg",
     comment: "ごろごろしてって"
   }
 ];
@@ -106,40 +106,63 @@ const roomImages = [
 <template>
   <main>
     <div class="kv">
-      <div>
-        <p class="text-white text-base font-pixel text-center">あ、陽キャさんお断りなんです。ゴメンナサイ。</p>
-        <h1 class="text-white text-4xl font-pixel text-center mt-16">陰キャカフェ</h1>
+      <div class="kv_title">
+        <p class="text-white text-base font-pixel">あ、陽キャさんお断りなんです。ゴメンナサイ。</p>
+        <h1 class="text-white text-4xl font-pixel mt-8">陰キャカフェ</h1>
+      </div>
+      <div class="kv_message">
+         <p class="text-lg">
+          <span>陰キャカフェとは、その名の通り陰キャが集うカフェである。陰キャを自覚する者なら誰でも大歓迎である。</span><br>
+          <span>平日木曜日の日中という、「そんな時間にカフェ行けるんだへー」という時間帯に陰キャが集う。ニート、フリーランス、主婦、学校苦手勢、大歓迎なのである。</span><br>
+          <span><small>※「そんな時間にカフェ行けるんだへー」を嫌味で言ってくるやつは羨ましいだけなので放っておきましょう。</small></span>
+          <br><br>
+          <span>ここで何をするかというと、飲み物片手に陰キャ話に花を咲かせてもよし、黙々作業するもよし。集まっていてもあくまでひとりはひとり。好きにすればよいのである。</span><br>
+          <span>ただ、ここに集うは陰キャのみ。眩しすぎる陽キャと対面することはないのである。</span>
+        </p>
       </div>
     </div>
-    <section class="section">
+    <!-- <section class="section">
       <h2 class="text-2xl text-center font-bold text-red-700">
         申し訳ございません<br>
         現在、陰キャカフェはゲストハウス改装中に伴い休業中です<br>
         2026年4月下旬再開予定です
       </h2>
-    </section>
+    </section> -->
     <section class="section">
-      <h2 class="text-center font-pixel text-stone-700 text-2xl font-bold">
-        木曜日は陰キャであつまろ
-      </h2>
-      <p class="text-base mt-10">
-        陰キャカフェとは、その名の通り陰キャが集うカフェである。陰キャを自覚する者なら誰でも大歓迎である。<br>
-        平日木曜日の日中という、「そんな時間にカフェ行けるんだへー」という時間帯に陰キャが集う。ニート、フリーランス、主婦、学校苦手勢、大歓迎なのである。
-        <small>※「そんな時間にカフェ行けるんだへー」を嫌味で言ってくるやつは羨ましいだけなので放っておきましょう</small><br><br>
-        集って何をするかというと、飲み物片手に陰キャ話に花を咲かせてもよし、黙々作業するもよし。好きにすればよいのである。<br>
-        ただ、ここに集うは陰キャのみ。眩しすぎる陽キャと対面することはないのである。
-      </p>
+      <div class="info">
+        <div>
+          <p class="font-pixel text-xl font-bold text-stone-700">自分で豆から挽いて淹れるコーヒー</p>
+          <p class="text-base mt-2 max-w-xl text-stone-700">大人の方はワンドリンクオーダーをお願いしております(カフェの機材を使ってご自身で用意をしていただくスタイルです)。<br>食べ物は持ち込み自由ですが、ゴミのお持ち帰りのご協力をお願いします。</p>
+        </div>
+        <img src="/images/yinkya/yinkya_coffee.jpg" class="info_img"/>
+      </div>
+      <div class="info mt-20">
+        <div>
+          <p class="font-pixel text-xl font-bold text-stone-700">電源・Wifiご自由にどうぞ</p>
+          <p class="text-base mt-2 max-w-xl text-stone-700">モニターもありますので、もくもく作業もどうぞ。</p>
+        </div>
+        <img src="/images/yinkya/yinkya_work.jpg" class="info_img"/>
+      </div>
+       <div class="info mt-20">
+        <div>
+          <p class="font-pixel text-xl font-bold text-stone-700">お子さま・赤さまも大歓迎</p>
+          <p class="text-base mt-2 max-w-xl text-stone-700">小さなお子さまが遊べそうなスペースもありますので、ご一緒にどうぞ。</p>
+        </div>
+        <img src="/images/yinkya/yinkya_kids.jpg" class="info_img"/>
+      </div>
+
+
     </section>
     <div class="bg-stone-200">
       <section class="section mt-20">
         <h2 class="text-center font-pixel text-stone-700 text-2xl font-bold">
-          カフェという名の隠れ家
+          こんな場所だよ（ごろごろしてってね）
         </h2>
         <div class="mt-20">
           <Carousel :settings="settings" :breakpoints="breakpoints">
           <Slide v-for="(item, index) in roomImages" :key="index">
             <div class="carousel__item">
-              <p class="mb-10 text-stone-700">{{ item.comment }}</p>
+              <!-- <p class="mb-2 text-stone-700">{{ item.comment }}</p> -->
               <img :src="item.imageUrl" class="aspect-square" />
             </div>
           </Slide>
@@ -156,10 +179,10 @@ const roomImages = [
         いつやってるの
       </h2>
       <p class="text-center text-white text-2xl mt-10">
-        毎週木曜日 11:30〜15:00
+        基本的に平日 9:00〜14:00
       </p>
       <p class="text-center text-white mt-10">
-        諸事情により開催できない時もありますので、念の為<a href="#calender" class="underline">こちらのカレンダー</a>をご確認の上お越しください m(_ _)m
+        不定期休暇のため、<a href="#calender" class="underline">こちらのカレンダー</a>をご確認の上お越しください m(_ _)m
       </p>
     </section>
     <section class="section">
@@ -234,22 +257,43 @@ const roomImages = [
 <style lang="scss" scoped>
 .kv {
   background-image: url("/images/yinkya/yinkya_kv.jpg");
-  height: 500px;
+  height: 1000px;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 50px;
+  &_title {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #928882;
+      mix-blend-mode: multiply;
+    }
+    padding: 40px;
+  }
+  &_message {
+    padding: 50px 30px 20px;
+    span {
+      background-color: #fff;
+    }
+  }
 }
-.coffee {
+.info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   @media (min-width: 640px) {
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
   }
   &_img {
+    border-radius: 50%;
     max-width: 300px;
     margin-bottom: 20px;
     @media (min-width: 640px) {
