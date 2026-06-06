@@ -101,6 +101,29 @@ const roomImages = [
     comment: "ごろごろしてって"
   }
 ];
+
+const drinkBarImages = [
+  {
+    imageUrl: "/images/yinkya/yinkya_coffee.jpg",
+    comment: "美味しく淹れてくれるコーヒーマシン"
+  },
+  {
+    imageUrl: "/images/yinkya/drinkbar01.jpg",
+    comment: "オーナーの趣味のコーヒーやお茶たち"
+  },
+  {
+    imageUrl: "/images/yinkya/drinkbar02.jpg",
+    comment: "好きなカップを選んでね"
+  },
+  {
+    imageUrl: "/images/yinkya/drinkbar03.jpg",
+    comment: "手挽きでドリップもできるよ"
+  },
+  {
+    imageUrl: "/images/yinkya/drinkbar04.jpg",
+    comment: "紅茶・ほうじ茶・変わったお茶もあるよ"
+  }
+];
 </script>
 
 <template>
@@ -133,8 +156,9 @@ const roomImages = [
     <section class="section">
       <div class="info">
         <div>
-          <p class="font-pixel text-xl font-bold text-stone-700">自分で豆から挽いて淹れるコーヒー</p>
-          <p class="text-base mt-2 max-w-xl text-stone-700">大人の方はワンドリンクオーダーをお願いしております(カフェの機材を使ってご自身で用意をしていただくスタイルです)。<br>食べ物は持ち込み自由ですが、ゴミのお持ち帰りのご協力をお願いします。</p>
+          <p class="font-pixel text-xl font-bold text-stone-700">豆から挽いて淹れるコーヒーもあるドリンクバー
+          </p>
+          <p class="text-base mt-2 max-w-xl text-stone-700">コーヒーや紅茶、日本茶などのドリンクバー設置(カフェの機材を使ってご自身で用意をしていただくスタイルです)。<br>食べ物は持ち込み自由ですが、ゴミのお持ち帰りのご協力をお願いします。</p>
         </div>
         <img src="/images/yinkya/yinkya_coffee.jpg" class="info_img"/>
       </div>
@@ -176,6 +200,29 @@ const roomImages = [
         </div>
       </section>
     </div>
+    <section class="section mt-20">
+      <h2 class="text-center font-pixel text-stone-700 text-2xl font-bold">
+        ドリンクバーもあるよ
+      </h2>
+      <p class="text-base  mt-16">
+        500円で使い放題のドリンクバーを設置しています。
+        コーヒーや紅茶、日本茶など、その時のオーナーの気分に偏ったラインナップを、自分でゆっくり淹れて楽しんでください。
+      </p>
+      <div class="mt-20">
+        <Carousel :settings="settings" :breakpoints="breakpoints">
+        <Slide v-for="(item, index) in drinkBarImages" :key="index">
+          <div class="carousel__item">
+            <img :src="item.imageUrl" class="aspect-square" />
+            <p class="mt-2 text-stone-700">{{ item.comment }}</p>
+          </div>
+        </Slide>
+        <template #addons>
+          <Navigation />
+          <Pagination />
+        </template>
+      </Carousel>
+      </div>
+    </section>
     <section class="section event_date">
       <h2 class="text-center text-white text-2xl font-bold font-pixel">
         いつやってるの
@@ -184,14 +231,14 @@ const roomImages = [
         基本的に平日 9:00〜14:00
       </p>
       <p class="text-center text-white mt-10">
-        不定期休暇のため、<a href="#calender" class="underline">こちらのカレンダー</a>をご確認の上お越しください m(_ _)m
+        急にお休みしたり、営業時間が変わったりするため、<a href="#calender" class="underline">こちらのカレンダー</a>をご確認の上お越しください m(_ _)m
       </p>
     </section>
     <section class="section">
       <h2 class="text-center text-stone-700 text-2xl font-bold font-pixel">
         主催のDrop in について
       </h2>
-      <p class="text-base mt-10">
+      <p class="text-base mt-16">
         無邪気な心で将来の夢に向かって頑張る陽キャが眩しい。<br>
         清く正しく明るい陽キャと自分をどうしても比べてしまう。そして落ち込んでしまう。 陽キャになろうと頑張ってみたけどどうしても疲れるし無理だった。<br>
         そんな人間が、陰キャを認めて陰キャを思いっきり楽しむために、楽しそうだと思ったことをやる活動です。
