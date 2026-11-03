@@ -134,25 +134,25 @@ const drinkBarImages = [
         <h1 class="text-white text-4xl font-pixel mt-4 mb-8">陰キャカフェ</h1>
         <hr>
         <div class="mt-16">
-         <p class="text-lg text-white">
-          <span>陰キャカフェとは、陰キャを自覚する者のためのカフェである。</span><br>
-          <span>平日の日中という、「そんな時間にカフェ行けるんだへー」という時間帯に陰キャが集う。ニート、フリーランス、主婦、学校苦手勢、大歓迎なのである。</span><br>
-          <small class="text-xs text-white">※「そんな時間にカフェ行けるんだへー」を嫌味で言ってくるやつは羨ましいだけなので放っておきましょう。</small>
-          <br><br>
-          <span>ここで何をするかというと、飲み物片手に陰キャ話に花を咲かせてもよし、黙々作業するもよし。集まっていてもあくまでひとりはひとり。好きにすればよいのである。</span>
-          <br><br>
-          <span>ただ、ここに集うは陰キャのみ。眩しすぎる陽キャと対面することはないのである。</span>
-        </p>
+          <p class="text-lg text-white">
+            <span>陰キャカフェとは、陰キャを自覚する者のためのカフェである。</span><br>
+            <span>平日の日中という、「そんな時間にカフェ行けるんだへー」という時間帯に陰キャが集う。ニート、フリーランス、主婦、学校苦手勢、大歓迎なのである。</span><br>
+            <small class="text-xs text-white">※「そんな時間にカフェ行けるんだへー」を嫌味で言ってくるやつは羨ましいだけなので放っておきましょう。</small>
+            <br><br>
+            <span>ここで何をするかというと、飲み物片手に陰キャ話に花を咲かせてもよし、黙々作業するもよし。集まっていてもあくまでひとりはひとり。好きにすればよいのである。</span>
+            <br><br>
+            <span>ただ、ここに集うは陰キャのみ。眩しすぎる陽キャと対面することはないのである。</span>
+          </p>
+        </div>
       </div>
+      <div class="mt-16 bg-white p-8">
+        <h2 class="text-2xl text-center font-bold text-red-700">
+        申し訳ございません<br>
+        現在、陰キャカフェは冬季休業中です<br>
+        2027年4月下旬再開予定です
+      </h2>
       </div>
     </div>
-    <!-- <section class="section">
-      <h2 class="text-2xl text-center font-bold text-red-700">
-        申し訳ございません<br>
-        現在、陰キャカフェはゲストハウス改装中に伴い休業中です<br>
-        2026年4月下旬再開予定です
-      </h2>
-    </section> -->
     <section class="section">
       <div class="info">
         <div>
